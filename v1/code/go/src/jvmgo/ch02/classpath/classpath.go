@@ -9,6 +9,7 @@ type Classpath struct {
 	userClasspath Entry
 }
 
+// 如果n个连续的参数有相同的类型，可以省略前n-1个参数的类型
 func Parse(jreOption, cpOption string) *Classpath {
 	cp := &Classpath{}
 	cp.parseBootAndExtClasspath(jreOption)
