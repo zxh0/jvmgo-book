@@ -1,4 +1,4 @@
-package main
+package main // 通常来说，包名应该和源文件所在的文件夹名一致，不过main包是个例外
 
 import "fmt"
 
