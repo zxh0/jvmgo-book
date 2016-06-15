@@ -36,9 +36,11 @@ type ClassFile struct {
 	attributes   []AttributeInfo
 }
 
+// Go函数（或方法）可以返回多个值
+// Go没有Java里的那种异常处理机制，通常用（最后一个）返回值来表示错误信息
 func Parse(classData []byte) (cf *ClassFile, err error) {
-	defer func() {
-		if r := recover(); r != nil {
+	defer func() { // 这个匿名函数会在最后执行
+		if r := recover(); r != nil { // 如果发生了panic()，试图recover()
 			var ok bool
 			err, ok = r.(error)
 			if !ok {
@@ -49,7 +51,7 @@ func Parse(classData []byte) (cf *ClassFile, err error) {
 
 	cr := &ClassReader{classData}
 	cf = &ClassFile{}
-	cf.read(cr)
+	cf.read(cr) // 这行代码有可能导致panic()
 	return
 }
 
