@@ -1,7 +1,7 @@
 package main
 
 import "fmt"
-import _ "jvmgo/ch04/classfile"
+import _ "jvmgo/ch04/classfile" // http://stackoverflow.com/questions/32465453/golang-what-is-import-side-effect
 import _ "jvmgo/ch04/classpath"
 import "jvmgo/ch04/rtda"
 
