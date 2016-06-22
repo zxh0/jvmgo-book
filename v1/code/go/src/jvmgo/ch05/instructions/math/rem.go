@@ -11,6 +11,8 @@ func (self *DREM) Execute(frame *rtda.Frame) {
 	stack := frame.OperandStack()
 	v2 := stack.PopDouble()
 	v1 := stack.PopDouble()
+	// Go的%运算符不支持浮点数，所以这了用了math包的Mod()函数
+	// 但不知道math.Mod()和Java里的%运算符在计算上是否完全等价
 	result := math.Mod(v1, v2) // todo
 	stack.PushDouble(result)
 }
