@@ -9,6 +9,7 @@
 47    | 3.3.10 | 表3-3     | (Ljava.lang.String;)V       | ([Ljava.lang.String;)V       | 啊乐         | 第2次印刷
 47    | 3.3.10 | 表3-3     | (FF)F                       | (FF)I                        | 啊乐         | 第2次印刷
 81    | 4.3.6  | 图4-13    | botto                       | bottom                       |              | 第2次印刷
+88    | 5.1    | 第1段话   | 266(0xFF)                   | 255(0xFF)                    | charles0lee  | 
 90    | 5.2.1  | 第2段     | 读取一个uint16整数          | 读取一个int16整数            | iHge2k       | 
 90    | 5.2.1  | 第4段     | 读取一个int8整数            | 读取一个uint8整数            | iHge2k       | 
 171   | 7.5.2  | 第4段代码 | ...ArgSlotCount())          | ...ArgSlotCount() - 1)       | Beyond       |
