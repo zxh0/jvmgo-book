@@ -1,0 +1,4 @@
+bin/
+pkg/
+build/
+.gradle/
