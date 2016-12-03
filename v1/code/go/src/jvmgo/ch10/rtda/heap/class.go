@@ -121,7 +121,7 @@ func (self *Class) GetMainMethod() *Method {
 	return self.getMethod("main", "([Ljava/lang/String;)V", true)
 }
 func (self *Class) GetClinitMethod() *Method {
-	return self.getMethod("<clinit>", "()V", true) // todo
+	return self.getMethod("<clinit>", "()V", true)
 }
 
 func (self *Class) getMethod(name, descriptor string, isStatic bool) *Method {
