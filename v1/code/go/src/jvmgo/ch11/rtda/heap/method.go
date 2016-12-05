@@ -47,6 +47,7 @@ func (self *Method) copyAttributes(cfMethod *classfile.MemberInfo) {
 		self.exceptionTable = newExceptionTable(codeAttr.ExceptionTable(),
 			self.class.constantPool)
 	}
+	self.exceptions = cfMethod.ExceptionsAttribute()
 	self.annotationData = cfMethod.RuntimeVisibleAnnotationsAttributeData()
 	self.parameterAnnotationData = cfMethod.RuntimeVisibleParameterAnnotationsAttributeData()
 	self.annotationDefaultData = cfMethod.AnnotationDefaultAttributeData()

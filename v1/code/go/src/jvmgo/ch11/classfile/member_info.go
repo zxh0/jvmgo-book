@@ -75,6 +75,16 @@ func (self *MemberInfo) ConstantValueAttribute() *ConstantValueAttribute {
 	return nil
 }
 
+func (self *MemberInfo) ExceptionsAttribute() *ExceptionsAttribute {
+	for _, attrInfo := range self.attributes {
+		switch attrInfo.(type) {
+		case *ExceptionsAttribute:
+			return attrInfo.(*ExceptionsAttribute)
+		}
+	}
+	return nil
+}
+
 func (self *MemberInfo) RuntimeVisibleAnnotationsAttributeData() []byte {
 	return self.getUnparsedAttributeData("RuntimeVisibleAnnotations")
 }
