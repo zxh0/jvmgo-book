@@ -9,7 +9,7 @@ public class Assert {
     }
 
     private static void fail() {
-        throw new AssertionError("not important");
+        throw new AssertionError("failed!");
     }
 
 }
