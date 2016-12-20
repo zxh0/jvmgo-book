@@ -5,15 +5,15 @@ import static jvmgo.book.ch07.test.Assert.*;
 public class SwitchTest {
 
     public static void main(String[] args) {
-        assertTrue(chooseNear(0) == 0);
-        assertTrue(chooseNear(1) == 1);
-        assertTrue(chooseNear(2) == 2);
+        assertTrue(chooseNear(0) ==  0);
+        assertTrue(chooseNear(1) ==  1);
+        assertTrue(chooseNear(2) ==  2);
         assertTrue(chooseNear(3) == -1);
 
         assertTrue(chooseFar(-100) == -1);
-        assertTrue(chooseFar(0) == 0);
-        assertTrue(chooseFar(100) == 1);
-        assertTrue(chooseFar(12) == -1);
+        assertTrue(chooseFar(0)    ==  0);
+        assertTrue(chooseFar(100)  ==  1);
+        assertTrue(chooseFar(12)   == -1);
     }
 
     // tableswitch
