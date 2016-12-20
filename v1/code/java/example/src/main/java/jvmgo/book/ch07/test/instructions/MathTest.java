@@ -1,6 +1,6 @@
 package jvmgo.book.ch07.test.instructions;
 
-import static jvmgo.book.ch07.test.instructions.Assert.*;
+import static jvmgo.book.ch07.test.Assert.*;
 
 public class MathTest {
 

@@ -1,4 +1,4 @@
-package jvmgo.book.ch07.test.instructions;
+package jvmgo.book.ch07.test;
 
 public class Assert {
 
