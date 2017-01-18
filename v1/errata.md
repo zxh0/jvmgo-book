@@ -2,7 +2,7 @@
 
 页数  | 章节   | 位置         | 原文                          | 更正                                | 读者         | 更正版次
 ----- | ------ | ------------ | ----------------------------- | ----------------------------------- | ------------ | ---------
- 13   | 2.3.2  | 第2段文字    | ...显示实现接口...            | ...显**式**实现接口...              | 先飞         | 第3次印刷
+ 13   | 2.3.2  | 第2段文字    | ...显示实现接口...            | ...显**式**实现接口...              | ![先飞][先飞]| 第3次印刷
  26   | 3.2    | 表3-1        | float33                       | float3**2**                         | 一切都将尘封 | 第3次印刷
  37   | 3.3.1  | 最后一行字   | ...常量池大小是61...          | ...常量池大小是6**4**...            | JingkaiTang  | 第3次印刷
  38   | 3.3.2  | 第3段        | 继续编辑constant`_pool`.go... | 继续编辑constant`_info`.go...       | 啊乐         | 第2次印刷
@@ -20,3 +20,13 @@
 172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | 乌鸦的吉他   | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | 乌鸦的吉他   | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | JingkaiTang  | 
+
+
+
+[Beyond]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
+[iHge2k]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
+[Jing0]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
+[啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
+[乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
+[先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
+[一切都将尘封]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
