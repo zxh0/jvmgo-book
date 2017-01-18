@@ -27,7 +27,7 @@
 [charles0lee]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/charles0lee.png?raw=true "charles0lee"
 [iHge2k]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
 [Jing0]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
-[JingkaiTang]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.jpg?raw=true "JingkaiTang"
+[JingkaiTang]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
 [啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
