@@ -17,4 +17,6 @@
 170   | 7.5.1  | 第2段代码    | if !resolved.IsStatic() {   | if !resolvedMethod.IsStatic() { | 乌鸦的吉他   |
 171   | 7.5.2  | 第4段代码    | ...ArgSlotCount())          | ...ArgSlotCount() - 1)          | Beyond       | 第3次印刷
 172   | 7.5.2  | 第2段        | 如果调用的中超类中的函数    | 如果调用的是超类中的函数        |              | 第3次印刷
+172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)  | (frame, methodToBeInvoked)      | 乌鸦的吉他   | 
+175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用... | 从操作数栈中取出this引用...     | 乌鸦的吉他   | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) { | switch self.data.(type) {       | JingkaiTang  | 
