@@ -10,13 +10,13 @@
  47   | 3.3.10 | 表3-3（r5c3）| (FF)F                         | (FF)**I**                           | ![啊乐][啊乐]                 | 第2次印刷
  47   | 3.3.10 | 表3-3（r6c2）| java.lang.Object[]            | java.lang.**String**[]              | ![乌鸦的吉他][乌鸦的吉他]     | 
  61   | 3.5    | 第1段代码    | func startJVM(参数错误)...    | func startJVM(`cmd *Cmd`)...        | ![Jing0][Jing0]               | 
- 81   | 4.3.6  | 图4-13       | botto                         | botto**m**                          |                               | 第2次印刷
+ 81   | 4.3.6  | 图4-13       | botto                         | botto**m**                          | ![zxh][zxh]                   | 第2次印刷
  88   | 5.1    | 第1段话      | 266(0xFF)                     | 2**55**(0xFF)                       | ![charles0lee][charles0lee]   | 第3次印刷
  90   | 5.2.1  | 第2段        | 读取一个uint16整数            | 读取一个**int16**整数               | ![iHge2k][iHge2k]             | 第3次印刷
  90   | 5.2.1  | 第4段        | 读取一个int8整数              | 读取一个**u**int8整数               | ![iHge2k][iHge2k]             | 第3次印刷
 170   | 7.5.1  | 第2段代码    | if !resolved.IsStatic() {     | if !resolved**Method**.IsStatic() { | ![乌鸦的吉他][乌鸦的吉他]     |
 171   | 7.5.2  | 第4段代码    | ...ArgSlotCount())            | ...ArgSlotCount()` - 1`)            | ![Beyond][Beyond]             | 第3次印刷
-172   | 7.5.2  | 第2段        | 如果调用的中超类中的函数      | 如果调用的**是**超类中的函数        |                               | 第3次印刷
+172   | 7.5.2  | 第2段        | 如果调用的中超类中的函数      | 如果调用的**是**超类中的函数        | ![zxh][zxh]                   | 第3次印刷
 172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | ![乌鸦的吉他][乌鸦的吉他]     | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
@@ -28,6 +28,7 @@
 [iHge2k]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
 [Jing0]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
 [JingkaiTang]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
+[zxh]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.jpg?raw=true "zxh"
 [啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
