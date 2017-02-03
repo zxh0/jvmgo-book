@@ -20,7 +20,7 @@
 172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | ![乌鸦的吉他][乌鸦的吉他]     | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
-
+194   | 8.3.2  | 第二段代码   | ...(*rtc.ClassRef)           | ...(*heap.ClassRef)      | CURAS   |
 
 
 [Beyond]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
