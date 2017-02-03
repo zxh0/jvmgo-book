@@ -20,12 +20,13 @@
 172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | ![乌鸦的吉他][乌鸦的吉他]     | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
-194   | 8.3.2  | 第二段代码   | ...(*rtc.ClassRef)           | ...(*heap.ClassRef)      | CURAS   |
-199   | 8.3.6  | 最后一句话   | newMultiArray()                | newMultiDimensionalArray()  | CURAS   |
-206   | 8.5.1  | getField方法 | ...isStatic) *Field {        | ...isStatic bool) *Field {  | CURAS |
+194   | 8.3.2  | 第二段代码   | ...(*rtc.ClassRef)           | ...(*heap.ClassRef)      | ![CURAS][CURAS]   |
+199   | 8.3.6  | 最后一句话   | newMultiArray()                | newMultiDimensionalArray()  | ![CURAS][CURAS]   |
+206   | 8.5.1  | getField方法 | ...isStatic) *Field {        | ...isStatic bool) *Field {  | ![CURAS][CURAS] |
 
 
 [Beyond]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
+[CURAS]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/CURAS.png?raw=true "CURAS"
 [charles0lee]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/charles0lee.png?raw=true "charles0lee"
 [iHge2k]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
 [Jing0]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
