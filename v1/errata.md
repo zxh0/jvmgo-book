@@ -23,6 +23,7 @@
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
 194   | 8.3.2  | 第二段代码   | ...(*rtc.ClassRef)            | ...(`*heap`.ClassRef)               | ![CURAS][CURAS]               | 
 199   | 8.3.6  | 最后一句话   | newMultiArray()               | newMultiDimensionalArray()          | ![CURAS][CURAS]               | 
+204   | 8.5    | 第二段话     | 缓存~~计~~字符串的哈希码      | 缓存字符串的哈希码                  | ![乌鸦的吉他][乌鸦的吉他]     | 
 206   | 8.5.1  | getField方法 | ...isStatic) *Field {         | ...isStatic **bool**) *Field {      | ![CURAS][CURAS]               | 
 
 
