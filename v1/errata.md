@@ -7,6 +7,7 @@
  37   | 3.3.1  | 最后一行字   | ...常量池大小是61...          | ...常量池大小是6**4**...            | ![JingkaiTang][JingkaiTang]   | 第3次印刷
  38   | 3.3.2  | 第3段        | 继续编辑constant`_pool`.go... | 继续编辑constant`_info`.go...       | ![啊乐][啊乐]                 | 第2次印刷
  45   | 3.3.9  | 最后一行字   | `CONSTANT_Utf_info`           | `CONSTANT_Utf8_info`                | ![乌鸦的吉他][乌鸦的吉他]     | 
+ 46   | 3.3.10 | 最后一行字   | (~~分号分隔的~~参数类型描述符)    | (参数类型描述符列表)                  | ![SevenKites][SevenKites]    | 
  47   | 3.3.10 | 表3-3（r4c3）| (Ljava.lang.String;)V         | (`[`Ljava.lang.String;)V          | ![啊乐][啊乐]                 | 第2次印刷
  47   | 3.3.10 | 表3-3（r5c3）| (FF)F                         | (FF)**I**                           | ![啊乐][啊乐]                 | 第2次印刷
  47   | 3.3.10 | 表3-3（r6c2）| java.lang.Object[]            | java.lang.**String**[]              | ![乌鸦的吉他][乌鸦的吉他]     | 
@@ -36,6 +37,7 @@
 [Jing0]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
 [JingkaiTang]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
 [Nancy945]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Nancy945.jpg?raw=true "Nancy945"
+[SevenKites]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/SevenKites.png?raw=true "SevenKites"
 [zxh]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.jpg?raw=true "zxh"
 [啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
