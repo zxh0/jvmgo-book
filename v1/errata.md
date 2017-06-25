@@ -17,12 +17,12 @@
  88   | 5.1    | 第1段话      | 266(0xFF)                     | 2**55**(0xFF)                       | ![charles0lee][charles0lee]   | 第3次印刷
  90   | 5.2.1  | 第2段        | 读取一个uint16整数            | 读取一个**int16**整数               | ![iHge2k][iHge2k]             | 第3次印刷
  90   | 5.2.1  | 第4段        | 读取一个int8整数              | 读取一个**u**int8整数               | ![iHge2k][iHge2k]             | 第3次印刷
-137   | 6.4    | [第3段代码][p137]| staticVars `*`Slots       | staticVars Slots                 | ![Powerful24HS][Powerful24HS]    |
-170   | 7.5.1  | 第1段代码    | import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"   | ![Nancy945][Nancy945]         | 
-170   | 7.5.1  | 第2段代码    | if !resolved.IsStatic() {     | if !resolved**Method**.IsStatic() { | ![乌鸦的吉他][乌鸦的吉他]     |
-171   | 7.5.2  | 第4段代码    | ...ArgSlotCount())            | ...ArgSlotCount()` - 1`)            | ![Beyond][Beyond]             | 第3次印刷
+137   | 6.4    |[第3段代码][p137]| staticVars `*`Slots       | staticVars Slots                 | ![Powerful24HS][Powerful24HS]    |
+170   | 7.5.1  |[第1段代码][p170a]| import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"   | ![Nancy945][Nancy945]         | 
+170   | 7.5.1  |[第2段代码][p170b]| if !resolved.IsStatic() { | if !resolved**Method**.IsStatic() { | ![乌鸦的吉他][乌鸦的吉他]     |
+171   | 7.5.2  |[第4段代码][p171] | ...ArgSlotCount())            | ...ArgSlotCount()` - 1`)            | ![Beyond][Beyond]             | 第3次印刷
 172   | 7.5.2  | 第2段        | 如果调用的中超类中的函数      | 如果调用的**是**超类中的函数        | ![zxh][zxh]                   | 第3次印刷
-172   | 7.5.2  | 倒数第2段代码| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
+172   | 7.5.2  |[第3段代码][p172]| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | ![乌鸦的吉他][乌鸦的吉他]     | 
 189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
 194   | 8.3.2  | 第2段代码    | ...(*rtc.ClassRef)            | ...(`*heap`.ClassRef)               | ![CURAS][CURAS]               | 
@@ -45,4 +45,8 @@
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
 [一切都将尘封]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
-[p137]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
+[p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
+[p170a]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
+[p170b]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
+[p171]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L24
+[p172]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L51
