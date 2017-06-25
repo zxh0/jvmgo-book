@@ -17,7 +17,7 @@
  88   | 5.1    | 第1段话      | 266(0xFF)                     | 2**55**(0xFF)                       | ![charles0lee][charles0lee]   | 第3次印刷
  90   | 5.2.1  | 第2段        | 读取一个uint16整数            | 读取一个**int16**整数               | ![iHge2k][iHge2k]             | 第3次印刷
  90   | 5.2.1  | 第4段        | 读取一个int8整数              | 读取一个**u**int8整数               | ![iHge2k][iHge2k]             | 第3次印刷
-137   | 6.4    | 第3段代码    | staticVars ~~*~~Slots         | staticVars Slots                 | ![Powerful24HS][Powerful24HS]    |
+137   | 6.4    | 第3段代码    | staticVars `*`Slots           | staticVars Slots                 | ![Powerful24HS][Powerful24HS]    |
 170   | 7.5.1  | 第1段代码    | import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"   | ![Nancy945][Nancy945]         | 
 170   | 7.5.1  | 第2段代码    | if !resolved.IsStatic() {     | if !resolved**Method**.IsStatic() { | ![乌鸦的吉他][乌鸦的吉他]     |
 171   | 7.5.2  | 第4段代码    | ...ArgSlotCount())            | ...ArgSlotCount()` - 1`)            | ![Beyond][Beyond]             | 第3次印刷
