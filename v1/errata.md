@@ -24,11 +24,11 @@
 172   | 7.5.2  | 第2段        | 如果调用的中超类中的函数      | 如果调用的**是**超类中的函数        | ![zxh][zxh]                   | 第3次印刷
 172   | 7.5.2  |[第3段代码][p172]| (frame, methodtoBeInvoked)    | (frame, method**T**oBeInvoked)      | ![乌鸦的吉他][乌鸦的吉他]     | 
 175   | 7.5.4  | 最后一段话   | 从操作数栈中弹出this引用...   | 从操作数栈中**取**出this引用...     | ![乌鸦的吉他][乌鸦的吉他]     | 
-189   | 8.2.1  | 最后一段代码 | switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
-194   | 8.3.2  | 第2段代码    | ...(*rtc.ClassRef)            | ...(`*heap`.ClassRef)               | ![CURAS][CURAS]               | 
+189   | 8.2.1  |[最后一段代码][p189]| switch self.fields.(type) {   | switch self.**data**.(type) {       | ![JingkaiTang][JingkaiTang]   | 
+194   | 8.3.2  |[第2段代码][p194]| ...(*rtc.ClassRef)            | ...(`*heap`.ClassRef)               | ![CURAS][CURAS]               | 
 199   | 8.3.6  | 最后一句话   | newMultiArray()               | newMultiDimensionalArray()          | ![CURAS][CURAS]               | 
 204   | 8.5    | 第2段话      | 缓存~~计~~字符串的哈希码      | 缓存字符串的哈希码                  | ![乌鸦的吉他][乌鸦的吉他]     | 
-206   | 8.5.1  | getField方法 | ...isStatic) *Field {         | ...isStatic **bool**) *Field {      | ![CURAS][CURAS]               | 
+206   | 8.5.1  |[第3段代码][p206]| ...isStatic) *Field {         | ...isStatic **bool**) *Field {      | ![CURAS][CURAS]               | 
 
 
 [Beyond]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
@@ -50,3 +50,6 @@
 [p170b]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
 [p171]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L24
 [p172]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L51
+[p189]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/rtda/heap/array_object.go#L29
+[p194]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/instructions/references/anewarray.go#L12
+[p206]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/rtda/heap/class.go#L125
