@@ -12,7 +12,7 @@
  47   | 3.3.10 | 表3-3（r5c3）| (FF)F                         | (FF)**I**                           | ![啊乐][啊乐]                 | 第2次印刷
  47   | 3.3.10 | 表3-3（r6c2）| java.lang.Object[]            | java.lang.**String**[]              | ![乌鸦的吉他][乌鸦的吉他]     | 
  47   | 3.3.10 | 第2段话      | override                      | overload                            | ![Nancy945][Nancy945]         | 
- 61   | 3.5    | 第1段代码    | func startJVM(参数错误)...    | func startJVM(`cmd *Cmd`)...        | ![Jing0][Jing0]               | 
+ 61   | 3.5    |[第1段代码][p61]| func startJVM(参数错误)...    | func startJVM(`cmd *Cmd`)...        | ![Jing0][Jing0]               | 
  81   | 4.3.6  | 图4-13       | botto                         | botto**m**                          | ![zxh][zxh]                   | 第2次印刷
  88   | 5.1    | 第1段话      | 266(0xFF)                     | 2**55**(0xFF)                       | ![charles0lee][charles0lee]   | 第3次印刷
  90   | 5.2.1  | 第2段        | 读取一个uint16整数            | 读取一个**int16**整数               | ![iHge2k][iHge2k]             | 第3次印刷
@@ -45,6 +45,7 @@
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
 [一切都将尘封]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
+[p61]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/main.go#L20
 [p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
 [p170a]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
 [p170b]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
