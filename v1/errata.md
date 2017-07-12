@@ -29,6 +29,7 @@
 199		| 8.3.6		| 最后一句话			| newMultiArray()				| newMultiDimensionalArray()			| ![CURAS][CURAS]				| 
 204		| 8.5		| 第2段话			| 缓存~~计~~字符串的哈希码			| 缓存字符串的哈希码						| ![乌鸦的吉他][乌鸦的吉他]		| 
 206		| 8.5.1		|[第3段代码][p206]	| ...isStatic) *Field {			| ...isStatic **bool**) *Field {		| ![CURAS][CURAS]				| 
+208		| 8.6		| 第3段话			| 最后把这个数组推入操作数栈顶		| 最后把这个数组放进局部变量表				| ![SevenKites][SevenKites]		| 
 213		| 9.1		| 第1段话			| jva.lang.Object				| j**a**va.lang.Object					| ![SevenKites][SevenKites]		| 
 
 
