@@ -15,9 +15,9 @@
  61		| 3.5		|[第1段代码][p61]		| func startJVM(参数错误)...		| func startJVM(`cmd *Cmd`)...			| ![Jing0][Jing0]				| 
  81		| 4.3.6		| 图4-13				| botto							| botto**m**							| ![zxh][zxh]					| 第2次印刷
  88		| 5.1		| 第1段话			| 266(0xFF)						| 2**55**(0xFF)							| ![charles0lee][charles0lee]	| 第3次印刷
- 90		| 5.2.1		| 第2段				| 读取一个uint16整数				| 读取一个**int16**整数					| ![iHge2k][iHge2k]				| 第3次印刷
+ 90		| 5.2.1		| 第2段				| 读取一个~~u~~int16整数			| 读取一个**int16**整数					| ![iHge2k][iHge2k]				| 第3次印刷
  90		| 5.2.1		| 第4段				| 读取一个int8整数				| 读取一个**u**int8整数					| ![iHge2k][iHge2k]				| 第3次印刷
-137		| 6.4		|[第3段代码][p137]	| staticVars `*`Slots			| staticVars Slots						| ![Powerful24HS][Powerful24HS]	| 
+137		| 6.4		|[第3段代码][p137]	| staticVars ~~*~~Slots			| staticVars Slots						| ![Powerful24HS][Powerful24HS]	| 
 170		| 7.5.1		|[第1段代码][p170a]	| import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"		| ![Nancy945][Nancy945]			| 
 170		| 7.5.1		|[第2段代码][p170b]	| if !resolved.IsStatic() {		| if !resolved**Method**.IsStatic() {	| ![乌鸦的吉他][乌鸦的吉他]		| 
 171		| 7.5.2		|[第4段代码][p171]	| ...ArgSlotCount())			| ...ArgSlotCount()` - 1`)				| ![Beyond][Beyond]				| 第3次印刷
@@ -26,7 +26,7 @@
 175		| 7.5.4		| 最后一段话			| 从操作数栈中弹出this引用...		| 从操作数栈中**取**出this引用...			| ![乌鸦的吉他][乌鸦的吉他]		| 
 189		| 8.2.1		|[最后一段代码][p189]	| switch self.fields.(type) {	| switch self.**data**.(type) {			| ![JingkaiTang][JingkaiTang]	| 
 194		| 8.3.2		|[第2段代码][p194]	| ...(*rtc.ClassRef)			| ...(`*heap`.ClassRef)					| ![CURAS][CURAS]				| 
-199		| 8.3.6		| 最后一句话			| newMultiArray()				| newMultiDimensionalArray()			| ![CURAS][CURAS]				| 
+199		| 8.3.6		| 最后一句话			| newMultiArray()				| newMulti**Dimensional**Array()		| ![CURAS][CURAS]				| 
 204		| 8.5		| 第2段话			| 缓存~~计~~字符串的哈希码			| 缓存字符串的哈希码						| ![乌鸦的吉他][乌鸦的吉他]		| 
 206		| 8.5.1		|[第3段代码][p206]	| ...isStatic) *Field {			| ...isStatic **bool**) *Field {		| ![CURAS][CURAS]				| 
 208		| 8.6		| 第3段话			| 最后把这个数组推入操作数栈顶		| 最后把这个数组放进局部变量表				| ![SevenKites][SevenKites]		| 
