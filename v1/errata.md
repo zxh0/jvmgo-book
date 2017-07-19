@@ -45,7 +45,7 @@
 [Nancy945]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Nancy945.jpg?raw=true "Nancy945"
 [Powerful24HS]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Powerful24HS.png?raw=true "Powerful24HS"
 [SevenKites]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/SevenKites.png?raw=true "SevenKites"
-[zxh]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.jpg?raw=true "zxh"
+[zxh]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.png?raw=true "zxh"
 [啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
