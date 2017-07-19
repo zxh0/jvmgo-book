@@ -11,7 +11,7 @@ func init() {
 
 // private static native void initialize();
 // ()V
-func initialize(frame *rtda.Frame) {
+func initialize(frame *rtda.Frame) { // hack: just make VM.savedProps nonempty
 	vmClass := frame.Method().Class()
 	savedProps := vmClass.GetRefVar("savedProps", "Ljava/util/Properties;")
 	key := heap.JString(vmClass.Loader(), "foo")
