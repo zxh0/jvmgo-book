@@ -8,9 +8,9 @@ func InvokeMethod(invokerFrame *rtda.Frame, method *heap.Method) {
 	newFrame := thread.NewFrame(method)
 	thread.PushFrame(newFrame)
 
-	argSlotSlot := int(method.ArgSlotCount())
-	if argSlotSlot > 0 {
-		for i := argSlotSlot - 1; i >= 0; i-- {
+	argSlotCount := int(method.ArgSlotCount())
+	if argSlotCount > 0 {
+		for i := argSlotCount - 1; i >= 0; i-- {
 			slot := invokerFrame.OperandStack().PopSlot()
 			newFrame.LocalVars().SetSlot(uint(i), slot)
 		}
