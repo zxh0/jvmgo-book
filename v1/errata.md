@@ -32,7 +32,8 @@
 208		| 8.6		| 第3段话			| 最后把这个数组推入操作数栈顶		| 最后把这个数组放进局部变量表				| ![SevenKites][SevenKites]		| 
 213		| 9.1		| 第1段话			| jva.lang.Object				| j**a**va.lang.Object					| ![SevenKites][SevenKites]		| 
 235		| 9.7		| 第2段话			| 静态方法value()...				| 静态方法value**Of**()...				| ![SevenKites][SevenKites]		| 
-235		| 9.7		| 最后一段话			| ...每次都创建Integer~~()~~对象。	| ...每次都创建Integer对象。				| ![zxh][zxh]					| 
+235		| 9.7		| 最后一段话			| ...每次都创建Integer()对象。		| ...每次都创建Integer对象。				| ![zxh][zxh]					| 
+236		| 9.7		| 第1段话			| 让...方法返回~~非~~null值...	| 让...方法返回null值...					| ![zxh][zxh]					| 
 
 
 [Beyond]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
