@@ -17,6 +17,8 @@
  88		| 5.1		| 第1段话			| 266(0xFF)						| 2**55**(0xFF)							| ![charles0lee][charles0lee]	| 第3次印刷
  90		| 5.2.1		| 第2段				| 读取一个~~u~~int16整数			| 读取一个**int16**整数					| ![iHge2k][iHge2k]				| 第3次印刷
  90		| 5.2.1		| 第4段				| 读取一个int8整数				| 读取一个**u**int8整数					| ![iHge2k][iHge2k]				| 第3次印刷
+135		| 6.3.2		| 第2段话			| superClass和interfaces字段...	| superClassName和interfaceNames字段...	| ![SevenKites][SevenKites]		| 
+135		| 6.3.2		| 第2段话			| ...存放类名和直接接口表，			| ...存放类名和直接接口名列表，				| ![SevenKites][SevenKites]		| 
 137		| 6.4		|[第3段代码][p137]	| staticVars `*`Slots			| staticVars Slots						| ![Powerful24HS][Powerful24HS]	| 
 140		| 6.4		| 最后一段话			| `ConstantValueIndex()`方法		| `ConstantValueAttribute()`方法			| ![SevenKites][SevenKites]		| 
 170		| 7.5.1		|[第1段代码][p170a]	| import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"		| ![Nancy945][Nancy945]			| 
