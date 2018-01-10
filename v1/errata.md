@@ -52,7 +52,7 @@
 [zxh]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.png?raw=true "zxh"
 [啊乐]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
 [乌鸦的吉他]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
-[风之魂JO]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/风之魂JO.png?raw=true "风之魂JO"
+[风之魂JO]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/风之魂JO.jpg?raw=true "风之魂JO"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
 [一切都将尘封]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
 [p26]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
