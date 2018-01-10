@@ -4,6 +4,7 @@
 ------- | --------- | ----------------- | ----------------------------- | ------------------------------------- | ----------------------------- | ---------
  13		| 2.3.2		| 第2段话			| ...显示实现接口...				| ...显**式**实现接口...					| ![先飞][先飞]					| 第3次印刷
  26		| 3.2		| 表3-1				| float33						| float3**2**							| ![一切都将尘封][一切都将尘封]		| 第3次印刷
+ 26		| 3.2.1		| [第一段代码	][p26]	| ...readBytes(length uint32)...| ...readBytes(n uint32)...				| ![风之魂JO][风之魂JO]			| 
  37		| 3.3.1		| 最后一行字			| ...常量池大小是61...			| ...常量池大小是6**4**...				| ![JingkaiTang][JingkaiTang]	| 第3次印刷
  38		| 3.3.2		| 第3段				| 继续编辑constant`_pool`.go...	| 继续编辑constant`_info`.go...			| ![啊乐][啊乐]					| 第2次印刷
  45		| 3.3.9		| 最后一行字			| `CONSTANT_Utf_info`			| `CONSTANT_Utf8_info`					| ![乌鸦的吉他][乌鸦的吉他]		| 
@@ -54,6 +55,7 @@
 [风之魂JO]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/风之魂JO.png?raw=true "风之魂JO"
 [先飞]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
 [一切都将尘封]: https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
+[p26]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
 [p61]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/main.go#L20
 [p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
 [p170a]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
