@@ -14,6 +14,7 @@
  47		| 3.3.10	| 表3-3（r6c2）		| java.lang.Object[]			| java.lang.**String**[]				| ![乌鸦的吉他][乌鸦的吉他]		| 
  47		| 3.3.10	| 第2段话			| override						| overload								| ![Nancy945][Nancy945]			| 
  52		| 3.4.1		| 最后一段话			| 表3-5给出了...					| 表3-4给出了...							| ![hgaolbb][hgaolbb]			| 
+ 55		| 3.4.4		| 第2段话			| 表3-6给出了...					| 表3-5给出了...							| ![hgaolbb][hgaolbb]			| 
  61		| 3.5		|[第1段代码][p61]		| func startJVM(参数错误)...		| func startJVM(`cmd *Cmd`)...			| ![Jing0][Jing0]				| 
  81		| 4.3.6		| 图4-13				| botto							| botto**m**							| ![zxh][zxh]					| 第2次印刷
  88		| 5.1		| 第1段话			| 266(0xFF)						| 2**55**(0xFF)							| ![charles0lee][charles0lee]	| 第3次印刷
