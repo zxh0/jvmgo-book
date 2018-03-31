@@ -7,7 +7,7 @@ import "jvmgo/ch05/rtda"
 type ALOAD struct{ base.Index8Instruction }
 
 func (self *ALOAD) Execute(frame *rtda.Frame) {
-	_aload(frame, uint(self.Index))
+	_aload(frame, self.Index)
 }
 
 type ALOAD_0 struct{ base.NoOperandsInstruction }
