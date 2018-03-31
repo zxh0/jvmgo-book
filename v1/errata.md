@@ -20,6 +20,7 @@
  88		| 5.1		| 第1段话			| 266(0xFF)						| 2**55**(0xFF)							| ![charles0lee][charles0lee]	| 第3次印刷
  90		| 5.2.1		| 第2段				| 读取一个~~u~~int16整数			| 读取一个**int16**整数					| ![iHge2k][iHge2k]				| 第3次印刷
  90		| 5.2.1		| 第4段				| 读取一个int8整数				| 读取一个**u**int8整数					| ![iHge2k][iHge2k]				| 第3次印刷
+ 95		| 5.4		| [第3段代码][p95]	| `_iload(frame, uint(self.Index))`| `_iload(frame, self.Index)`		| ![captain][captain]			| 
 135		| 6.3.2		| 第2段话			| superClass和interfaces字段...	| superClassName和interfaceNames字段...	| ![SevenKites][SevenKites]		| 
 135		| 6.3.2		| 第2段话			| ...存放类名和直接接口表，			| ...存放类名和直接接口名列表，				| ![SevenKites][SevenKites]		| 
 137		| 6.4		|[第3段代码][p137]	| staticVars `*`Slots			| staticVars Slots						| ![Powerful24HS][Powerful24HS]	| 
@@ -45,6 +46,7 @@
 [Beyond]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
 [CURAS]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/CURAS.png?raw=true "CURAS"
 [charles0lee]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/charles0lee.png?raw=true "charles0lee"
+[captain]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/captain.png?raw=true "captain"
 [iHge2k]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
 [Jing0]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
 [JingkaiTang]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
@@ -60,6 +62,7 @@
 [一切都将尘封]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
 [p26]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
 [p61]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/main.go#L20
+[p95]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch05/instructions/loads/iload.go#L10
 [p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
 [p170a]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
 [p170b]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
