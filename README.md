@@ -1,5 +1,7 @@
 # [《自己动手写Java虚拟机》][jd] 源代码
 
+[![Build Status](https://travis-ci.org/zxh0/jvmgo-book.svg?branch=master)](https://travis-ci.org/zxh0/jvmgo-book)
+
 ![jvm.go Logo][logo]
 
 * [✎ 勘误表](v1/errata.md)
