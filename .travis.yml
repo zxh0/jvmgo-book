@@ -13,6 +13,8 @@ before_install:
 install: true
 
 script:
+  - echo $JAVA_HOME
+  - which java
   - cd v1/code/go
   - export GOPATH=$PWD
   - go install jvmgo/ch01
