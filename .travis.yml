@@ -19,3 +19,4 @@ script:
   - export GOPATH=$PWD
   - go install jvmgo/ch01
   - go install jvmgo/ch02
+  - ./bin/ch02 java.lang.Object
