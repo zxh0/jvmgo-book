@@ -16,3 +16,4 @@ script:
   - cd v1/code/go
   - export GOPATH=$PWD
   - go install jvmgo/ch01
+  - go install jvmgo/ch02
