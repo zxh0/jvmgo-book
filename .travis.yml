@@ -1,0 +1,18 @@
+# branches:
+#   only:
+#     - master
+
+language: go
+
+go:
+  - "1.9"
+
+before_install: 
+  - sudo apt-get install oracle-java8-set-default
+
+install: true
+
+script:
+  - cd v1/code/go
+  - export GOPATH=$PWD
+  - go install jvmgo/ch01
