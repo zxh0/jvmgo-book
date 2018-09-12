@@ -8,3 +8,5 @@
  */
 
 rootProject.name = 'jvmgo_java'
+
+include 'ch02'
