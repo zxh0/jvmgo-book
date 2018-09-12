@@ -6,8 +6,6 @@ import com.beust.jcommander.ParameterException;
 public class Main {
 
     public static void main(String[] argv) {
-        Args args = Args.parse(argv);
-
         Args args = new Args();
         JCommander cmd = JCommander.newBuilder()
                 .addObject(args)
@@ -20,9 +18,6 @@ public class Main {
             return;
         }
 
-        if (! args.ok) {
-
-        }
         if (args.versionFlag) {
             System.out.println("java version \"1.8.0\"");
             return;
