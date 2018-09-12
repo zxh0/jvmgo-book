@@ -19,10 +19,11 @@ subprojects {
     apply plugin: 'application'
 
     sourceCompatibility = "1.8";
-    //mainClassName = 'com.github.zxh0.jvmgo.Main'
+    mainClassName = 'com.github.jvmgo.Main'
 
     dependencies {
         compileOnly 'org.projectlombok:lombok:1.18.2'
+        compile "com.beust:jcommander:1.71"
         testCompile 'junit:junit:4.12'
     }
 
