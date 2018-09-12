@@ -9,6 +9,7 @@
 
 rootProject.name = 'jvmgo_java'
 
+include 'ch01'
 include 'ch02'
 include 'ch03'
 include 'ch04'
