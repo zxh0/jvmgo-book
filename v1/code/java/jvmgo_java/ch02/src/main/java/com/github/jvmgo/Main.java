@@ -1,32 +1,21 @@
 package com.github.jvmgo;
 
-import com.beust.jcommander.JCommander;
-import com.beust.jcommander.ParameterException;
-
 public class Main {
 
     public static void main(String[] argv) {
-        Args args = new Args();
-        JCommander cmd = JCommander.newBuilder()
-                .addObject(args)
-                .build();
-
-        try {
-            cmd.parse(argv);
-        } catch (ParameterException e) {
-            System.out.printf("Usage: <main class> [-options] class [args...]\n");
-            return;
-        }
-
-        if (args.versionFlag) {
+        Args args = Args.parse(argv);
+        if (!args.ok || args.helpFlag) {
+            System.out.println("Usage: <main class> [-options] class [args...]");
+        } else if (args.versionFlag) {
             System.out.println("java version \"1.8.0\"");
-            return;
+        } else {
+            startJVM(args);
         }
+    }
 
-        if (args.helpFlag) {
-            cmd.usage();
-            return;
-        }
+    private static void startJVM(Args args) {
+        System.out.printf("classpath:%s class:%s args:%s\n",
+                args.classpath, args.mainClassAndArgs, args.mainClassAndArgs);
     }
 
 }
