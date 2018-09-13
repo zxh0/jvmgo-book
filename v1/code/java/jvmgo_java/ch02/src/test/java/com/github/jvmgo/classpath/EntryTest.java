@@ -34,14 +34,14 @@ public class EntryTest {
     public void zipEntry() throws Exception {
         String[] cp = System.getProperty("java.class.path").split(File.pathSeparator);
         String rtJarPath = Arrays.stream(cp)
-                .filter(path -> path.endsWith("/rt.jar"))
+                .filter(path -> path.endsWith("/junit-4.12.jar"))
                 .findFirst()
                 .get();
 
         Entry entry = Entry.create(rtJarPath);
         assertEquals(ZipEntry.class, entry.getClass());
 
-        byte[] data = entry.readClass("java/lang/Object.class");
+        byte[] data = entry.readClass("org/junit/Test.class");
         assertNotNull(data);
     }
 
@@ -52,7 +52,7 @@ public class EntryTest {
         Entry entry = Entry.create(cp);
         assertEquals(CompositeEntry.class, entry.getClass());
 
-        byte[] data = entry.readClass("java/lang/Object.class");
+        byte[] data = entry.readClass("org/junit/Test.class");
         assertNotNull(data);
     }
 
@@ -60,15 +60,15 @@ public class EntryTest {
     public void wildcardEntry() throws Exception {
         String[] cp = System.getProperty("java.class.path").split(File.pathSeparator);
         String rtJarPath = Arrays.stream(cp)
-                .filter(path -> path.endsWith("/rt.jar"))
+                .filter(path -> path.endsWith("/junit-4.12.jar"))
                 .findFirst()
                 .get()
-                .replace("rt.jar", "*");
+                .replace("/junit-4.12.jar", "/*");
 
         Entry entry = Entry.create(rtJarPath);
         assertEquals(WildcardEntry.class, entry.getClass());
 
-        byte[] data = entry.readClass("java/lang/Object.class");
+        byte[] data = entry.readClass("org/junit/Test.class");
         assertNotNull(data);
     }
 
