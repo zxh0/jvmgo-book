@@ -1,7 +1,10 @@
 package com.github.jvmgo.classpath;
 
+import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class Classpath {
 
@@ -64,6 +67,16 @@ public class Classpath {
         }
 
         return userClasspath.readClass(className);
+    }
+
+
+    public static String join(String... paths) {
+        return Arrays.stream(paths)
+                .collect(Collectors.joining(File.pathSeparator));
+    }
+
+    public static String[] split(String pathList) {
+        return pathList.split(File.pathSeparator);
     }
 
 }
