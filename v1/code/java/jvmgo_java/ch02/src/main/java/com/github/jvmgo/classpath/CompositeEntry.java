@@ -4,11 +4,11 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CompositeEntry implements Entry {
+class CompositeEntry implements Entry {
 
     private final List<Entry> entries = new ArrayList<>();
 
-    public CompositeEntry(String pathList) {
+    CompositeEntry(String pathList) {
         for (String path : pathList.split(File.pathSeparator)) {
             entries.add(Entry.create(path));
         }

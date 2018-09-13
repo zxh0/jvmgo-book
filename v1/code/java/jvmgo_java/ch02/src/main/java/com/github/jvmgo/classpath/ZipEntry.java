@@ -2,11 +2,11 @@ package com.github.jvmgo.classpath;
 
 import java.nio.file.*;
 
-public class ZipEntry implements Entry {
+class ZipEntry implements Entry {
 
     private Path absPath;
 
-    public ZipEntry(String path) {
+    ZipEntry(String path) {
         absPath = Paths.get(path).toAbsolutePath();
     }
 

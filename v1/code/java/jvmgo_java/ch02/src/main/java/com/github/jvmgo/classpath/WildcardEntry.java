@@ -3,12 +3,13 @@ package com.github.jvmgo.classpath;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.stream.Collectors;
 
-public class WildcardEntry extends CompositeEntry {
+class WildcardEntry extends CompositeEntry {
 
-    public WildcardEntry(String path) {
+    WildcardEntry(String path) {
         super(toPathList(path));
     }
 
@@ -18,7 +19,7 @@ public class WildcardEntry extends CompositeEntry {
             return Files.walk(Paths.get(baseDir))
                     .filter(Files::isRegularFile)
                     .filter(p -> p.endsWith(".jar") || p.endsWith(".JAR"))
-                    .map(p -> p.toString())
+                    .map(Path::toString)
                     .collect(Collectors.joining(File.pathSeparator));
         } catch (IOException e) {
             //e.printStackTrace(System.err);
