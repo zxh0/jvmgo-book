@@ -20,7 +20,8 @@ public class EntryTest {
     @Test
     public void dirEntry() throws Exception {
         String className = EntryTest.class.getName().replace('.', '/') + ".class";
-        String classesDir = EntryTest.class.getResource("EntryTest.class").getPath().replace(className, "");
+        String classesDir = EntryTest.class.getResource("EntryTest.class")
+                .getPath().replace(className, "");
 
         Entry entry = Entry.create(classesDir);
         assertEquals(DirEntry.class, entry.getClass());
@@ -50,6 +51,22 @@ public class EntryTest {
 
         Entry entry = Entry.create(cp);
         assertEquals(CompositeEntry.class, entry.getClass());
+
+        byte[] data = entry.readClass("java/lang/Object.class");
+        assertNotNull(data);
+    }
+
+    @Test
+    public void wildcardEntry() throws Exception {
+        String[] cp = System.getProperty("java.class.path").split(File.pathSeparator);
+        String rtJarPath = Arrays.stream(cp)
+                .filter(path -> path.endsWith("/rt.jar"))
+                .findFirst()
+                .get()
+                .replace("rt.jar", "*");
+
+        Entry entry = Entry.create(rtJarPath);
+        assertEquals(WildcardEntry.class, entry.getClass());
 
         byte[] data = entry.readClass("java/lang/Object.class");
         assertNotNull(data);

@@ -14,12 +14,12 @@ class WildcardEntry extends CompositeEntry {
     }
 
     private static String toPathList(String wildcardPath) {
-        String baseDir = wildcardPath.substring(wildcardPath.length() - 1); // remove *
+        String baseDir = wildcardPath.replace("*", ""); // remove *
         try {
             return Files.walk(Paths.get(baseDir))
                     .filter(Files::isRegularFile)
-                    .filter(p -> p.endsWith(".jar") || p.endsWith(".JAR"))
                     .map(Path::toString)
+                    .filter(p -> p.endsWith(".jar") || p.endsWith(".JAR"))
                     .collect(Collectors.joining(File.pathSeparator));
         } catch (IOException e) {
             //e.printStackTrace(System.err);
