@@ -38,7 +38,7 @@ public class Classpath {
         }
         String jh = System.getenv("JAVA_HOME");
         if (jh != null) {
-            Paths.get(jh, "jre");
+            return Paths.get(jh, "jre").toString();
         }
         throw new RuntimeException("Can not find JRE folder!");
     }
