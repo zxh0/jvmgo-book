@@ -23,6 +23,18 @@ public class Args {
     boolean ok;
 
 
+    String getMainClass() {
+        return mainClassAndArgs != null && !mainClassAndArgs.isEmpty()
+                ? mainClassAndArgs.get(0)
+                : null;
+    }
+
+    List<String> getAppArgs() {
+        return mainClassAndArgs != null && mainClassAndArgs.size() < 2
+                ? mainClassAndArgs.subList(1, mainClassAndArgs.size())
+                : null;
+    }
+
     static Args parse(String[] argv) {
         Args args = new Args();
         JCommander cmd = JCommander.newBuilder()

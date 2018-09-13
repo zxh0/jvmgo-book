@@ -15,7 +15,7 @@ public class Main {
 
     private static void startJVM(Args args) {
         System.out.printf("classpath:%s class:%s args:%s\n",
-                args.classpath, args.mainClassAndArgs, args.mainClassAndArgs);
+                args.classpath, args.getMainClass(), args.getAppArgs());
     }
 
 }
