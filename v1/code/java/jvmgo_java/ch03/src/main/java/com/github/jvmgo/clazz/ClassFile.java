@@ -65,7 +65,8 @@ System.out.println();
 	
 	
 	private void readConstantPool() {
-		//TBD
+		this.constantPool = new ConstantPool(this.reader);
+		
 	}
 	private void readAcessFlag() {
 		//TBD
