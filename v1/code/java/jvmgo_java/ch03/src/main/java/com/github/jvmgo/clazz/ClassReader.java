@@ -34,6 +34,15 @@ public class ClassReader {
 		return result;
 	}
 	
+	public byte[] readByte(int length) {
+		byte[] result = new byte[length];
+		
+		for(int i = 0 ;i< length;i++) {
+			result[i] =this.getByte();
+		}
+		return result;
+	}
+	
 	
 	private String getByteHexString(int byteSize) {
 		StringBuffer hexString = new StringBuffer();
@@ -48,5 +57,14 @@ public class ClassReader {
 		byte b = this.classData[currentIndex];
 		currentIndex ++;
 		return b;
+	}
+	
+	
+	public boolean isEnd() {
+		return this.currentIndex >=this.classData.length;
+	}
+	
+	public void reset() {
+		this.currentIndex = 0;
 	}
 }
