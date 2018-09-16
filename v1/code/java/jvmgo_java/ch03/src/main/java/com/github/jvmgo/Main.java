@@ -1,11 +1,13 @@
 package com.github.jvmgo;
 
 import com.github.jvmgo.classpath.Classpath;
+import com.github.jvmgo.clazz.ClassFile;
 
 import java.util.Arrays;
 
 public class Main {
-
+	
+	
     public static void main(String[] argv) {
         Args args = Args.parse(argv);
         if (!args.ok || args.helpFlag) {
@@ -25,10 +27,16 @@ public class Main {
         String className = args.getMainClass().replace(".", "/");
         try {
             byte[] classData = cp.readClass(className);
-            System.out.println("class data: " + Arrays.toString(classData));
+            ClassFile classFile= new ClassFile(classData);
         } catch (Exception e) {
             System.out.println("Could not find or load main class " + args.getMainClass());
         }
+    }
+    
+    
+    public static void panic(String msg) {
+    	System.out.println(msg);
+    	System.exit(0);
     }
 
 }

@@ -2,12 +2,12 @@ package com.github.jvmgo.clazz;
 
 import java.math.BigInteger;
 
+import com.github.jvmgo.Main;
 import com.github.jvmgo.constantPool.ConstantPool;
 
-public class Clazz {
-	private static String CAFEBABE = new BigInteger("cafebabe",16).toString();
+public class ClassFile {
+	private static Long CAFEBABE = new BigInteger("cafebabe",16).longValue();
 	private static int ACC_PUBLIC =0x0021;
-	
 	
 	private int minorVersion;
 	private int majorVersion;
@@ -20,15 +20,22 @@ public class Clazz {
 	private MemberInfo[] methods;
 	private ClassReader reader;
 	
-	public Clazz(byte[] classData) {
+	public ClassFile(byte[] classData) {
 		reader = new ClassReader(classData);
 		this.init();
+//for test start
+for(byte b : classData) {
+	System.out.print(String.format("%02x",b)+",");
+}
+System.out.println();
+//for test end
+		
 	}
 	
 	
 	private void init() {
-		this.readAndCheckMinorVersion();
-		this.readAndCheckMajorVersion();
+		this.readAndCheckMagic();
+		this.readAndCheckVersion();
 		this.readConstantPool();
 		this.readAcessFlag();
 		this.readClassNameIndex();
@@ -39,13 +46,23 @@ public class Clazz {
 		
 	}
 	
-	private void readAndCheckMinorVersion() {
-		//TBD
+	private void readAndCheckMagic() {
+		long magic = this.reader.readUint32();
+		if(magic != ClassFile.CAFEBABE) {
+			Main.panic("java.lang.ClassFormatError: magic!");
+		}
 	}
 	
-	private void readAndCheckMajorVersion() {
-		//TBD
+	private void readAndCheckVersion() {
+		this.minorVersion = this.reader.readUint16();
+		this.majorVersion = this.reader.readUint16();
+		
+		if(this.majorVersion >=46 && this.majorVersion <=52 && this.minorVersion ==0) {
+			return;
+		}
+		Main.panic("java.lang.UnsupportedClassVersionError!");
 	}
+	
 	
 	private void readConstantPool() {
 		//TBD
@@ -72,4 +89,5 @@ public class Clazz {
 	private void readMethods() {
 		//TBD
 	}
+	
 }
