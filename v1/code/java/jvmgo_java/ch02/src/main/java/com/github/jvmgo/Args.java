@@ -18,7 +18,7 @@ public class Args {
     String classpath;
 
     /**
-     * 指定jre目录
+     * jre目录
      */
     @Parameter(names = "-Xjre", description = "path to jre", order = 4)
     String jre;

@@ -3,8 +3,6 @@ package com.github.jvmgo;
 import com.github.jvmgo.classpath.Classpath;
 import com.github.jvmgo.clazz.ClassFile;
 
-import java.util.Arrays;
-
 public class Main {
 	
 	
@@ -27,6 +25,7 @@ public class Main {
         String className = args.getMainClass().replace(".", "/");
         try {
             byte[] classData = cp.readClass(className);
+
             ClassFile classFile= new ClassFile(classData);
         } catch (Exception e) {
             System.out.println("Could not find or load main class " + args.getMainClass());
