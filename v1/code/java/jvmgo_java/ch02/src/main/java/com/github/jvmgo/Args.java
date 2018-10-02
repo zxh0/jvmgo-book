@@ -17,6 +17,9 @@ public class Args {
     @Parameter(names = { "-cp", "-classpath" }, description = "classpath", order = 1)
     String classpath;
 
+    /**
+     * 指定jre目录
+     */
     @Parameter(names = "-Xjre", description = "path to jre", order = 4)
     String jre;
 
@@ -33,7 +36,7 @@ public class Args {
     }
 
     List<String> getAppArgs() {
-        return mainClassAndArgs != null && mainClassAndArgs.size() < 2
+        return mainClassAndArgs != null && mainClassAndArgs.size() >1
                 ? mainClassAndArgs.subList(1, mainClassAndArgs.size())
                 : null;
     }

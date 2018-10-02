@@ -33,7 +33,7 @@ public class Args {
     }
 
     List<String> getAppArgs() {
-        return mainClassAndArgs != null && mainClassAndArgs.size() < 2
+        return mainClassAndArgs != null && mainClassAndArgs.size() >1
                 ? mainClassAndArgs.subList(1, mainClassAndArgs.size())
                 : null;
     }

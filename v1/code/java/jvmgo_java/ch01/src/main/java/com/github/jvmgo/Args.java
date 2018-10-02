@@ -17,7 +17,8 @@ public class Args {
     @Parameter(names = { "-cp", "-classpath" }, description = "classpath", order = 1)
     String classpath;
 
-    @Parameter(description = "main class and args")
+
+    @Parameter(description = "main class and args")//所有其他没有解析的options
     List<String> mainClassAndArgs;
 
     boolean ok;
@@ -30,7 +31,7 @@ public class Args {
     }
 
     List<String> getAppArgs() {
-        return mainClassAndArgs != null && mainClassAndArgs.size() < 2
+        return mainClassAndArgs != null && mainClassAndArgs.size() >1
                 ? mainClassAndArgs.subList(1, mainClassAndArgs.size())
                 : null;
     }
