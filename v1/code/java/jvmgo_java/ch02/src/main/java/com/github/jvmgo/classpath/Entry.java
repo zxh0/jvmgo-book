@@ -9,16 +9,21 @@ public interface Entry {
 
     // factory method
     static Entry create(String path) {
+
         if (path.contains(File.pathSeparator)) {
             return new CompositeEntry(path);
-        } if (path.endsWith("*")) {
+        }
+
+        if (path.endsWith("*")) {
             return new WildcardEntry(path);
-        } if (path.endsWith(".jar") || path.endsWith(".JAR") ||
+        }
+
+        if (path.endsWith(".jar") || path.endsWith(".JAR") ||
                 path.endsWith(".zip") || path.endsWith(".ZIP")) {
             return new ZipEntry(path);
-        } else {
-            return new DirEntry(path);
         }
+
+        return new DirEntry(path);
     }
 
 }

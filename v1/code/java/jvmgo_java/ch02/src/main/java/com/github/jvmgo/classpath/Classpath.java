@@ -21,11 +21,11 @@ public class Classpath {
         String jreDir = getJreDir(jreOption);
 
         // jre/lib/*
-        String jreLibPath = Paths.get(jreDir, "lib", "*").toString();
+        String jreLibPath = Paths.get(jreDir, "lib").toString()+ File.separator + "*";
         bootClasspath = new WildcardEntry(jreLibPath);
 
         // jre/lib/ext/*
-        String jreExtPath = Paths.get(jreDir, "lib", "ext", "*").toString();
+        String jreExtPath = Paths.get(jreDir, "lib", "ext").toString()+ File.separator + "*";
         extClasspath = new WildcardEntry(jreExtPath);
     }
 
