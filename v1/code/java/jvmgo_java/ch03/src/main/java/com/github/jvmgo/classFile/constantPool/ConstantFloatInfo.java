@@ -10,9 +10,9 @@ public class ConstantFloatInfo implements ConstantInfo{
 
     private float value;
 
-    public ConstantFloatInfo(ConstantPool aConstPool, ClassReader reader) {
+    public ConstantFloatInfo( ClassReader reader) {
         //u4
-        value = reader.readFloat();
+        value = reader.nextU4ToFloat();
     }
 
     @Override

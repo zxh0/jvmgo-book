@@ -12,7 +12,7 @@ attribute_info {
 */
 public interface AttributeInfo {
     static AttributeInfo[] readAttributes(ClassReader reader, ConstantPool cp) {
-         int  attributesCount = reader.readUint16();
+         int  attributesCount = reader.nextU2ToInt();
         AttributeInfo[] attributes= new AttributeInfo[attributesCount];
         
         for(int i=0;i<attributesCount;i++){
@@ -24,9 +24,9 @@ public interface AttributeInfo {
 
 
     static AttributeInfo readAttribute(ClassReader reader, ConstantPool cp) {
-      int  attrNameIndex = reader.readUint16();
+      int  attrNameIndex = reader.nextU2ToInt();
       String  attrName = cp.getUTF8(attrNameIndex);
-      long  attrLen = reader.readUint32();
+      long  attrLen = reader.nextU4ToInt();
         AttributeInfo attributeInfo= newAttributeInfo(attrName, attrLen, cp);
         return attributeInfo.readInfo(reader);
     }

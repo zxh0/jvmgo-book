@@ -10,9 +10,9 @@ public class ConstantIntegerInfo implements ConstantInfo{
 
     private Integer value;
 
-    public ConstantIntegerInfo(ConstantPool aConstPool, ClassReader reader) {
+    public ConstantIntegerInfo( ClassReader reader) {
         //u4
-        value = reader.readInt();
+        value = reader.nextU4ToInt();
     }
 
     @Override

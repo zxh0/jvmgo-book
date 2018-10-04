@@ -16,7 +16,7 @@ public class ConstantValueAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-        constantValueIndex = reader.readUint16();
+        constantValueIndex = reader.nextU2ToInt();
         return this;
     }
 }

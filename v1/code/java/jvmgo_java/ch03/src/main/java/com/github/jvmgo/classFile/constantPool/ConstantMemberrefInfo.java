@@ -21,8 +21,8 @@ public class ConstantMemberrefInfo implements ConstantInfo{
     private int nameAndTypeIndex;
 
     public ConstantMemberrefInfo(ConstantPool aConstPool, ClassReader reader) {
-        this.classIndex = reader.readUint16();
-        this.nameAndTypeIndex = reader.readUint16();
+        this.classIndex = reader.nextU2ToInt();
+        this.nameAndTypeIndex = reader.nextU2ToInt();
         this.constPool = aConstPool;
     }
 

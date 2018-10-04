@@ -11,7 +11,7 @@ public class ExceptionsAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-       eceptionIndexTable = reader.readUint16s();
+       eceptionIndexTable = reader.nextUint16s();
        return this;
     }
 }

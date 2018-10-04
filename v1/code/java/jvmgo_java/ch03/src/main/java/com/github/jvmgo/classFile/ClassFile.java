@@ -4,13 +4,11 @@ import com.github.jvmgo.Main;
 import com.github.jvmgo.classFile.constantPool.ConstantPool;
 import lombok.Getter;
 
-import java.math.BigInteger;
-
 @Getter
 public class ClassFile {
-	private static Long CAFEBABE = new BigInteger("cafebabe",16).longValue();
-	private static int ACC_PUBLIC =0x0021;
-	
+	//private static Long CAFEBABE = new BigInteger("cafebabe",16).longValue();
+	//private static int ACC_PUBLIC =0x0021;
+
 	private int minorVersion;
 	private int majorVersion;
 	private ConstantPool constantPool;
@@ -42,15 +40,15 @@ public class ClassFile {
 
 	//0xCAFEBABE
 	private void readAndCheckMagic() {
-		long magic = this.reader.readUint32();
-		if(magic != ClassFile.CAFEBABE) {
+		String magic = this.reader.nextU4ToHexString();
+		if(!"cafebabe".equals(magic)) {
 			Main.panic("java.lang.ClassFormatError: magic!");
 		}
 	}
 	
 	private void readAndCheckVersion() {
-		this.minorVersion = this.reader.readUint16();
-		this.majorVersion = this.reader.readUint16();
+		this.minorVersion = this.reader.nextU2ToInt();
+		this.majorVersion = this.reader.nextU2ToInt();
 		
 		if(this.majorVersion >=46 && this.majorVersion <=52 && this.minorVersion ==0) {
 			return;
@@ -64,20 +62,20 @@ public class ClassFile {
 		
 	}
 	private void readAcessFlag() {
-		accessFlag=reader.readUint16();
+		accessFlag=reader.nextU2ToInt();
 	}
 	
 	private void readClassNameIndex() {
-		classNameIndex = reader.readUint16();
+		classNameIndex = reader.nextU2ToInt();
 
 	}
 	
 	private void readSuperClassNameIndex() {
-		superClassNameIndex= reader.readUint16();
+		superClassNameIndex= reader.nextU2ToInt();
 	}
 	
 	private void readInterfaceIndexes() {
-		inerfaceindexes=reader.readUint16s();
+		inerfaceindexes=reader.nextUint16s();
 	}
 
 	private void readFields() {

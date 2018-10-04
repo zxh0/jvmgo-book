@@ -10,9 +10,9 @@ public class ConstantLongInfo implements ConstantInfo{
 
     private long value;
 
-    public ConstantLongInfo(ConstantPool aConstPool, ClassReader reader) {
+    public ConstantLongInfo( ClassReader reader) {
         //u4
-        value  = reader.readLong();
+        value  = reader.next2U4ToLong();
     }
 
     @Override

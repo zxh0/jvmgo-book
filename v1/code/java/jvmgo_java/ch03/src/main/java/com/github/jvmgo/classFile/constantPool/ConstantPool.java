@@ -10,10 +10,10 @@ public class ConstantPool {
 	private ConstantInfo[] constantInfos;
 	
 	public ConstantPool(ClassReader reader) {
-		constantPoolSize = reader.readUint16();
+		constantPoolSize = reader.nextU2ToInt();
 		constantInfos = new  ConstantInfo[constantPoolSize];
 		for(int i = 1; i < constantPoolSize ; i++) {
-			int tag = reader.readUint8();
+			int tag = reader.nextU1toInt();
 			ConstantInfo constInfo = ConstantInfo.createConstantInfo(tag, reader,this);
 			constantInfos[i]=constInfo;
 

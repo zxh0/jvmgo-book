@@ -18,7 +18,7 @@ public class UnparsedAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-        info =reader.readByte(length);
+        info =reader.nextBytes(length);
         return this;
     }
 }

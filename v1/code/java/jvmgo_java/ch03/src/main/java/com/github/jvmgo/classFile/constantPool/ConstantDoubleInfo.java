@@ -10,9 +10,9 @@ public class ConstantDoubleInfo implements ConstantInfo{
 
     private Double value;
 
-    public ConstantDoubleInfo(ConstantPool aConstPool, ClassReader reader) {
+    public ConstantDoubleInfo( ClassReader reader) {
         //u4
-        value  = reader.readDouble();
+        value  = reader.next2U4Double();
     }
 
     @Override

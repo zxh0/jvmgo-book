@@ -13,7 +13,7 @@ public class LineNumberTableAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-        int length = reader.readUint16();
+        int length = reader.nextU2ToInt();
 
 
         lineNumberTable = new LineNumberTableEntry[length];
@@ -29,8 +29,8 @@ public class LineNumberTableAttribute implements AttributeInfo {
         private final int lineNumber;
 
         public LineNumberTableEntry(ClassReader reader) {
-            startPc=reader.readUint16();
-            lineNumber=reader.readUint16();
+            startPc=reader.nextU2ToInt();
+            lineNumber=reader.nextU2ToInt();
         }
     }
 }

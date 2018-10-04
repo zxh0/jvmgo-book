@@ -19,8 +19,8 @@ public class ConstantNameAndTypeInfo implements ConstantInfo{
     private int  descriptorIndex;
 
     public ConstantNameAndTypeInfo(ConstantPool aConstPool, ClassReader reader) {
-        this.nameIndex = reader.readUint16();
-        this.descriptorIndex = reader.readUint16();
+        this.nameIndex = reader.nextU2ToInt();
+        this.descriptorIndex = reader.nextU2ToInt();
         this.constPool = aConstPool;
     }
 

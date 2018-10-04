@@ -10,7 +10,7 @@ import com.github.jvmgo.classFile.constantPool.ConstantPool;
  u4 attribute_length;
 
  u2 max_stack;//操作数栈的最大深度
- u2 max_locals;//出局部变量表大小
+ u2 max_locals;//局部变量表大小
 
  //字节码
  u4 code_length;
@@ -33,12 +33,16 @@ import com.github.jvmgo.classFile.constantPool.ConstantPool;
  ```
  */
 public class CodeAttribute implements AttributeInfo {
-    private int maxStack;
-    private int maxLocals;
-    private byte[] code;
-    private AttributeInfo[] attributes;
+
+    private int maxStack;//操作数栈的最大深度
+    private int maxLocals;//局部变量表大小
+
+    private byte[] code;//字节码
+
+    private AttributeInfo[] attributes;//子属性
+
     private ConstantPool cp;
-    private ExceptionTableEntry[] exceptionTable;
+    private ExceptionTableEntry[] exceptionTable; //异常处理表
 
     public CodeAttribute(ConstantPool cp) {
         this.cp=cp;
@@ -46,12 +50,12 @@ public class CodeAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-        maxStack = reader.readUint16();
-        maxLocals = reader.readUint16();
+        maxStack = reader.nextU2ToInt();
+        maxLocals = reader.nextU2ToInt();
 
         //字节码
-        int codeLength = (int) reader.readUint32();
-        code = reader.readByte(codeLength);
+        int codeLength = reader.nextU4ToInt();
+        code = reader.nextBytes(codeLength);
 
         //异常处理表
         exceptionTable = ExceptionTableEntry.readExceptionTable(reader);
@@ -69,14 +73,14 @@ public class CodeAttribute implements AttributeInfo {
       private int  catchType ;
 
       private ExceptionTableEntry(ClassReader reader) {
-          this.startPc =  reader.readUint16();
-          this.endPc =  reader.readUint16();
-          this.handlerPc =  reader.readUint16();
-          this.catchType =  reader.readUint16();
+          this.startPc =  reader.nextU2ToInt();
+          this.endPc =  reader.nextU2ToInt();
+          this.handlerPc =  reader.nextU2ToInt();
+          this.catchType =  reader.nextU2ToInt();
       }
 
       static   ExceptionTableEntry[]  readExceptionTable(ClassReader reader){
-          int length = reader.readUint16();
+          int length = reader.nextU2ToInt();
           ExceptionTableEntry[]  exceptionTable = new ExceptionTableEntry[length];
 
        for (int i=0;i<length;i++){

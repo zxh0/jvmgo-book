@@ -15,7 +15,7 @@ public class ConstClassInfo implements ConstantInfo{
 	private int nameIndex;
 	
 	public ConstClassInfo(ConstantPool aConstPool,ClassReader reader) {
-		this.nameIndex = reader.readUint16();
+		this.nameIndex = reader.nextU2ToInt();
 		this.constPool = aConstPool;
 	}
 

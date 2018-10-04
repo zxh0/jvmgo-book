@@ -8,7 +8,7 @@ public class LocalVariableTableAttribute implements AttributeInfo {
 
     @Override
     public AttributeInfo readInfo(ClassReader reader) {
-        int length = reader.readUint16();
+        int length = reader.nextU2ToInt();
         localVariableTable = new LocalVariableTableEntry[length];
         for (int i=0;i<length;i++){
             localVariableTable[i]=new LocalVariableTableEntry(reader);
@@ -25,11 +25,11 @@ public class LocalVariableTableAttribute implements AttributeInfo {
         private final int index;
 
         public LocalVariableTableEntry(ClassReader reader) {
-                    startPc         =reader.readUint16();
-                    length          =reader.readUint16();
-                    nameIndex       =reader.readUint16();
-                    descriptorIndex =reader.readUint16();
-                    index           =reader.readUint16();
+                    startPc         =reader.nextU2ToInt();
+                    length          =reader.nextU2ToInt();
+                    nameIndex       =reader.nextU2ToInt();
+                    descriptorIndex =reader.nextU2ToInt();
+                    index           =reader.nextU2ToInt();
         }
     }
 

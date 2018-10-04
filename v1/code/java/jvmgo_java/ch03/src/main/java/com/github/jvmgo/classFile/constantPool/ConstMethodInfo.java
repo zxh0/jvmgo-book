@@ -8,8 +8,8 @@ public class ConstMethodInfo implements ConstantInfo{
 	private int nameAndTypeIndex;
 	
 	public ConstMethodInfo(ConstantPool aConstPool,ClassReader reader) {
-		this.classIndex = reader.readUint16();
-		this.nameAndTypeIndex = reader.readUint16();
+		this.classIndex = reader.nextU2ToInt();
+		this.nameAndTypeIndex = reader.nextU2ToInt();
 	}
 
 	@Override

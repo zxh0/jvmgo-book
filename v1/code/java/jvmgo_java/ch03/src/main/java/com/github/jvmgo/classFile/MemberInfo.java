@@ -32,14 +32,14 @@ public class MemberInfo {
 
     public MemberInfo(ConstantPool constantPool, ClassReader reader) {
                 cp=constantPool;
-                accessFlags=reader.readUint16();
-                nameIndex=reader.readUint16();
-                descriptorIndex=reader.readUint16();
+                accessFlags=reader.nextU2ToInt();
+                nameIndex=reader.nextU2ToInt();
+                descriptorIndex=reader.nextU2ToInt();
                 attributes=AttributeInfo.readAttributes(reader, cp);
     }
 
     public static MemberInfo[] readMembers(ConstantPool constantPool, ClassReader reader) {
-        int  fieldCount=reader.readUint16();
+        int  fieldCount=reader.nextU2ToInt();
         MemberInfo[] fields=new MemberInfo[fieldCount];
 
         for (int i=0;i<fieldCount;i++){
