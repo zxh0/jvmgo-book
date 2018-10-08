@@ -48,7 +48,7 @@
 [CURAS]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/CURAS.png?raw=true "CURAS"
 [charles0lee]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/charles0lee.png?raw=true "charles0lee"
 [captain]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/captain.png?raw=true "captain"
-[gwr0-0]:		https://avatars0.githubusercontent.com/u/24693410?s=88&v=4
+[gwr0-0]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/gwr0-0.png?raw=true "gwr0-0"
 [iHge2k]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
 [Jing0]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
 [JingkaiTang]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
