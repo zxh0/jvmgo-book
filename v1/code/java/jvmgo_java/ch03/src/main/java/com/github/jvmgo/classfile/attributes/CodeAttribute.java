@@ -45,11 +45,11 @@ public class CodeAttribute implements AttributeInfo {
     private ExceptionTableEntry[] exceptionTable; //异常处理表
 
     public CodeAttribute(ConstantPool cp) {
-        this.cp=cp;
+        this.cp = cp;
     }
 
     @Override
-    public AttributeInfo readInfo(ClassReader reader) {
+    public void readInfo(ClassReader reader) {
         maxStack = reader.nextU2ToInt();
         maxLocals = reader.nextU2ToInt();
 
@@ -61,7 +61,6 @@ public class CodeAttribute implements AttributeInfo {
         exceptionTable = ExceptionTableEntry.readExceptionTable(reader);
 
         attributes = AttributeInfo.readAttributes(reader, cp);
-        return this;
     }
 
   static   class ExceptionTableEntry  {

@@ -7,14 +7,12 @@ public class LocalVariableTableAttribute implements AttributeInfo {
     private LocalVariableTableEntry[] localVariableTable;
 
     @Override
-    public AttributeInfo readInfo(ClassReader reader) {
+    public void readInfo(ClassReader reader) {
         int length = reader.nextU2ToInt();
         localVariableTable = new LocalVariableTableEntry[length];
         for (int i=0;i<length;i++){
             localVariableTable[i]=new LocalVariableTableEntry(reader);
         }
-
-        return this;
     }
 
     private class LocalVariableTableEntry {

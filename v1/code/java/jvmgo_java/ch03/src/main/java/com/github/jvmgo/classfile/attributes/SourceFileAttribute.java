@@ -21,9 +21,8 @@ public class SourceFileAttribute implements AttributeInfo {
     }
 
     @Override
-    public AttributeInfo readInfo(ClassReader reader) {
+    public void readInfo(ClassReader reader) {
        int sourceFileIndex =reader.nextU2ToInt();
        sourceFile =cp.getUTF8(sourceFileIndex);
-        return this;
     }
 }

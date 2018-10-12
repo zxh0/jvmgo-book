@@ -12,7 +12,7 @@ attribute_info {
 */
 public interface AttributeInfo {
 
-    AttributeInfo readInfo(ClassReader reader);
+    void readInfo(ClassReader reader);
 
     static AttributeInfo[] readAttributes(ClassReader reader, ConstantPool cp) {
         int attributesCount = reader.nextU2ToInt();
@@ -30,7 +30,8 @@ public interface AttributeInfo {
         String attrName = cp.getUTF8(attrNameIndex);
         long attrLen = reader.nextU4ToInt();
         AttributeInfo attributeInfo = newAttributeInfo(attrName, attrLen, cp);
-        return attributeInfo.readInfo(reader);
+        attributeInfo.readInfo(reader);
+        return attributeInfo;
     }
 
     //todo 工厂方法xml配置?

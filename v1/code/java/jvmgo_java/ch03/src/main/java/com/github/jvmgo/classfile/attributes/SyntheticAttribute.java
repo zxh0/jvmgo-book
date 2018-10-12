@@ -8,7 +8,7 @@ import com.github.jvmgo.classfile.ClassReader;
  */
 public class SyntheticAttribute implements AttributeInfo {
     @Override
-    public AttributeInfo readInfo(ClassReader reader) {
-        return null;
+    public void readInfo(ClassReader reader) {
+
     }
 }

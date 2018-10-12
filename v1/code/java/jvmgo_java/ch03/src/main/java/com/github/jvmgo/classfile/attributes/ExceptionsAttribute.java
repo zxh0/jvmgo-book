@@ -10,8 +10,7 @@ public class ExceptionsAttribute implements AttributeInfo {
     private int[] eceptionIndexTable;
 
     @Override
-    public AttributeInfo readInfo(ClassReader reader) {
+    public void readInfo(ClassReader reader) {
        eceptionIndexTable = reader.nextUint16s();
-       return this;
     }
 }
