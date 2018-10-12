@@ -1,13 +1,21 @@
 package com.github.jvmgo.classfile.constantpool;
 
 import com.github.jvmgo.classfile.ClassReader;
+import lombok.Getter;
 
-public class ConstStringInfo implements ConstantInfo {
+/**
+ * {
+ * u1 tag;
+ * u2 name_index;
+ * }
+ */
+@Getter
+public class ConstantClassInfo implements ConstantInfo {
 
     private ConstantPool constPool;
     private int nameIndex;
 
-    public ConstStringInfo(ConstantPool aConstPool, ClassReader reader) {
+    public ConstantClassInfo(ConstantPool aConstPool, ClassReader reader) {
         this.nameIndex = reader.nextU2ToInt();
         this.constPool = aConstPool;
     }
@@ -17,11 +25,10 @@ public class ConstStringInfo implements ConstantInfo {
         return this.constPool.getUTF8(this.nameIndex);
     }
 
+
     @Override
     public String toString() {
-        return "ConstStringInfo{" +
-                "name=" + constPool.getUTF8(nameIndex) +
-                '}';
+        return constPool.getUTF8(nameIndex);
     }
 
 }

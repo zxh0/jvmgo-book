@@ -27,13 +27,14 @@ public class ConstantMemberrefInfo implements ConstantInfo {
 
     @Override
     public String getValue() {
-        return constPool.getUTF8(classIndex) + " " + constPool.getUTF8(nameAndTypeIndex);
+        return constPool.getUTF8(classIndex)
+                + " " + constPool.getUTF8(nameAndTypeIndex);
     }
 
     @Override
     public String toString() {
         ConstantInfo[] constantInfos = constPool.getConstantInfos();
-        ConstClassInfo constClassInfo = (ConstClassInfo) constantInfos[classIndex];
+        ConstantClassInfo constClassInfo = (ConstantClassInfo) constantInfos[classIndex];
         ConstantNameAndTypeInfo nameAndTypeInfo = (ConstantNameAndTypeInfo) constantInfos[nameAndTypeIndex];
         return "ConstantMemberrefInfo{" +
                 constClassInfo + "  " +

@@ -37,13 +37,13 @@ public interface ConstantInfo {
                 return new ConstantDoubleInfo(reader);
 
             case CONST_TAG_UTF8:
-                return new ConstUft8Info(reader);
+                return new ConstantUft8Info(reader);
 
             //以下3个引用UTF8
             case CONST_TAG_STRING:
-                return new ConstStringInfo(constPool, reader);
+                return new ConstantStringInfo(constPool, reader);
             case CONST_TAG_CLASS:
-                return new ConstClassInfo(constPool, reader);
+                return new ConstantClassInfo(constPool, reader);
             case CONST_TAG_NAME_AND_TYPE:
                 return new ConstantNameAndTypeInfo(constPool, reader);
 
