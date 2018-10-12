@@ -8,7 +8,7 @@ public class Util {
     }
 
     public static String byteToHexString(byte[] codes) {
-        StringBuffer buffer = new StringBuffer();
+        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < codes.length; i++) {
             byte b = codes[i];
             int value = b & 0xFF;
@@ -16,9 +16,9 @@ public class Util {
             if (strHex.length() < 2) {
                 strHex = "0" + strHex;
             }
-            buffer.append(strHex);
+            sb.append(strHex);
         }
-        return buffer.toString();
+        return sb.toString();
     }
 
 }
