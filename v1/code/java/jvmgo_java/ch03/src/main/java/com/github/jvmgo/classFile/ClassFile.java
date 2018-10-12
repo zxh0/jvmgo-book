@@ -27,7 +27,7 @@ public class ClassFile {
 		this.readAndCheckVersion();
 		this.readConstantPool();
 
-		this.readAcessFlag();
+		this.readAccessFlag();
 		this.readClassNameIndex();
 		this.readSuperClassNameIndex();
 		this.readInterfaceIndexes();
@@ -50,7 +50,7 @@ public class ClassFile {
 		this.minorVersion = this.reader.nextU2ToInt();
 		this.majorVersion = this.reader.nextU2ToInt();
 		
-		if(this.majorVersion >=46 && this.majorVersion <=52 && this.minorVersion ==0) {
+		if (this.majorVersion >= 46 && this.majorVersion <= 52 && this.minorVersion == 0) {
 			return;
 		}
 		Main.panic("java.lang.UnsupportedClassVersionError!");
@@ -61,8 +61,8 @@ public class ClassFile {
 		this.constantPool = new ConstantPool(this.reader);
 		
 	}
-	private void readAcessFlag() {
-		accessFlag=reader.nextU2ToInt();
+	private void readAccessFlag() {
+		accessFlag = reader.nextU2ToInt();
 	}
 	
 	private void readClassNameIndex() {
@@ -71,19 +71,19 @@ public class ClassFile {
 	}
 	
 	private void readSuperClassNameIndex() {
-		superClassNameIndex= reader.nextU2ToInt();
+		superClassNameIndex = reader.nextU2ToInt();
 	}
 	
 	private void readInterfaceIndexes() {
-		interfaceIndexes =reader.nextUint16s();
+		interfaceIndexes = reader.nextUint16s();
 	}
 
 	private void readFields() {
-		fields=MemberInfo.readMembers(constantPool,reader);
+		fields = MemberInfo.readMembers(constantPool, reader);
 
 	}
 	private void readMethods() {
-		methods=MemberInfo.readMembers(constantPool,reader);
+		methods = MemberInfo.readMembers(constantPool, reader);
 	}
 
 
