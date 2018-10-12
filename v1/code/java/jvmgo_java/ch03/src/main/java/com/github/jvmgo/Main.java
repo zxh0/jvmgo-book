@@ -31,7 +31,7 @@ public class Main {
         try {
             byte[] classData = cp.readClass(className);
 
-            ClassFile classFile= new ClassFile(classData);
+            ClassFile classFile = new ClassFile(classData);
             printClassInfo(classFile);
            
         } catch (Exception e) {
@@ -57,7 +57,7 @@ public class Main {
         System.out.format("access flags: 0x%x\n", cf.getAccessFlag());
         System.out.println("this class: "+ constantPool.getUTF8(cf.getClassNameIndex()));
         System.out.println("super class: "+ constantPool.getUTF8(cf.getSuperClassNameIndex()));
-        System.out.println("interfaces: "+cf.getInerfaceindexes().length);
+        System.out.println("interfaces: "+cf.getInterfaceIndexes().length);
         MemberInfo[] fields = cf.getFields();
         System.out.println("fields count: "+ fields.length);
         for (MemberInfo memberInfo : fields) {
