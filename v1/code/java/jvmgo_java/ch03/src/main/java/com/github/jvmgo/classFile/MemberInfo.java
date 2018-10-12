@@ -23,29 +23,28 @@ public class MemberInfo {
 
     private ConstantPool cp;
 
-    private int accessFlags    ;
+    private int accessFlags;
     private int nameIndex;
-    private int  descriptorIndex ;
-    private AttributeInfo[] attributes    ;
-
-
+    private int descriptorIndex;
+    private AttributeInfo[] attributes;
 
     public MemberInfo(ConstantPool constantPool, ClassReader reader) {
-                cp=constantPool;
-                accessFlags=reader.nextU2ToInt();
-                nameIndex=reader.nextU2ToInt();
-                descriptorIndex=reader.nextU2ToInt();
-                attributes=AttributeInfo.readAttributes(reader, cp);
+        cp = constantPool;
+        accessFlags = reader.nextU2ToInt();
+        nameIndex = reader.nextU2ToInt();
+        descriptorIndex = reader.nextU2ToInt();
+        attributes = AttributeInfo.readAttributes(reader, cp);
     }
 
     public static MemberInfo[] readMembers(ConstantPool constantPool, ClassReader reader) {
-        int  fieldCount=reader.nextU2ToInt();
-        MemberInfo[] fields=new MemberInfo[fieldCount];
+        int fieldCount = reader.nextU2ToInt();
+        MemberInfo[] fields = new MemberInfo[fieldCount];
 
-        for (int i=0;i<fieldCount;i++){
-            fields[i]=new MemberInfo(constantPool,reader);
+        for (int i = 0; i < fieldCount; i++) {
+            fields[i] = new MemberInfo(constantPool, reader);
         }
 
         return fields;
     }
+
 }
