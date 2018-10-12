@@ -1,6 +1,5 @@
 package com.github.jvmgo.classfile;
 
-import com.github.jvmgo.Main;
 import com.github.jvmgo.classfile.constantpool.ConstantPool;
 import lombok.Getter;
 
@@ -39,7 +38,7 @@ public class ClassFile {
     private void readAndCheckMagic() {
         String magic = this.reader.nextU4ToHexString();
         if (!"cafebabe".equals(magic)) {
-            Main.panic("java.lang.ClassFormatError: magic!");
+            throw new ClassFormatError("magic!");
         }
     }
 
@@ -50,9 +49,8 @@ public class ClassFile {
         if (this.majorVersion >= 46 && this.majorVersion <= 52 && this.minorVersion == 0) {
             return;
         }
-        Main.panic("java.lang.UnsupportedClassVersionError!");
+        throw new UnsupportedClassVersionError();
     }
-
 
     private void readConstantPool() {
         this.constantPool = new ConstantPool(this.reader);
