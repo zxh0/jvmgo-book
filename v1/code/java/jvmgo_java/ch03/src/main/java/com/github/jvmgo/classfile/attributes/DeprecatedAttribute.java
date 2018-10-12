@@ -7,8 +7,10 @@ import com.github.jvmgo.classfile.ClassReader;
  * @Date: 2018/10/3 0003 19:47
  */
 public class DeprecatedAttribute implements AttributeInfo {
+
     @Override
     public void readInfo(ClassReader reader) {
 
     }
+
 }

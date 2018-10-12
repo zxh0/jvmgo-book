@@ -12,10 +12,11 @@ import com.github.jvmgo.classfile.ClassReader;
 public class ConstantValueAttribute implements AttributeInfo {
 
     //具体指向哪种常量因字段类型而异。
-   private int constantValueIndex;
+    private int constantValueIndex;
 
     @Override
     public void readInfo(ClassReader reader) {
         constantValueIndex = reader.nextU2ToInt();
     }
+
 }
