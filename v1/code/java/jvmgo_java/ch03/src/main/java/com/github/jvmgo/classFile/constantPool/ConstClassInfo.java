@@ -10,23 +10,25 @@ import lombok.Getter;
  * }
  */
 @Getter
-public class ConstClassInfo implements ConstantInfo{
-	private ConstantPool constPool;
-	private int nameIndex;
-	
-	public ConstClassInfo(ConstantPool aConstPool,ClassReader reader) {
-		this.nameIndex = reader.nextU2ToInt();
-		this.constPool = aConstPool;
-	}
+public class ConstClassInfo implements ConstantInfo {
 
-	@Override
-	public String getValue() {
-		return this.constPool.getUTF8(this.nameIndex);
-	}
+    private ConstantPool constPool;
+    private int nameIndex;
+
+    public ConstClassInfo(ConstantPool aConstPool, ClassReader reader) {
+        this.nameIndex = reader.nextU2ToInt();
+        this.constPool = aConstPool;
+    }
+
+    @Override
+    public String getValue() {
+        return this.constPool.getUTF8(this.nameIndex);
+    }
 
 
-	@Override
-	public String toString() {
-		return  constPool.getUTF8(nameIndex);
-	}
+    @Override
+    public String toString() {
+        return constPool.getUTF8(nameIndex);
+    }
+
 }

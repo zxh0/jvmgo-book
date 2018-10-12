@@ -2,7 +2,6 @@ package com.github.jvmgo.classfile.attributes;
 
 import com.github.jvmgo.classfile.ClassReader;
 
-
 public class LocalVariableTableAttribute implements AttributeInfo {
     private LocalVariableTableEntry[] localVariableTable;
 
@@ -23,11 +22,11 @@ public class LocalVariableTableAttribute implements AttributeInfo {
         private final int index;
 
         public LocalVariableTableEntry(ClassReader reader) {
-                    startPc         = reader.nextU2ToInt();
-                    length          = reader.nextU2ToInt();
-                    nameIndex       = reader.nextU2ToInt();
-                    descriptorIndex = reader.nextU2ToInt();
-                    index           = reader.nextU2ToInt();
+            startPc = reader.nextU2ToInt();
+            length = reader.nextU2ToInt();
+            nameIndex = reader.nextU2ToInt();
+            descriptorIndex = reader.nextU2ToInt();
+            index = reader.nextU2ToInt();
         }
     }
 

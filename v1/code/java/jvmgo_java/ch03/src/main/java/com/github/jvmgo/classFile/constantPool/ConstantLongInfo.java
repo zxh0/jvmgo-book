@@ -6,22 +6,22 @@ import com.github.jvmgo.classfile.ClassReader;
  * @Author: panda
  * @Date: 2018/10/3 0003 12:41
  */
-public class ConstantLongInfo implements ConstantInfo{
+public class ConstantLongInfo implements ConstantInfo {
 
     private long value;
 
-    public ConstantLongInfo( ClassReader reader) {
-        //u4
-        value  = reader.next2U4ToLong();
+    public ConstantLongInfo(ClassReader reader) {
+        value = reader.next2U4ToLong(); //u4
     }
 
     @Override
     public String getValue() {
-        return value+"";
+        return value + "";
     }
 
     @Override
     public String toString() {
-        return "Long: "+value;
+        return "Long: " + value;
     }
+
 }

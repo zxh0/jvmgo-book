@@ -3,11 +3,11 @@ package com.github.jvmgo.classfile.attributes;
 import com.github.jvmgo.classfile.ClassReader;
 
 /**
- ConstantValue_attribute {
- u2 attribute_name_index;
- u4 attribute_length;//2
- u2 constantvalue_index;//常量池索引
- }
+ * ConstantValue_attribute {
+ * u2 attribute_name_index;
+ * u4 attribute_length;//2
+ * u2 constantvalue_index;//常量池索引
+ * }
  */
 public class ConstantValueAttribute implements AttributeInfo {
 

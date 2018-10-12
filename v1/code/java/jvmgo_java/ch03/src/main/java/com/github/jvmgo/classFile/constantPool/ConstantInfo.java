@@ -4,20 +4,21 @@ import com.github.jvmgo.Main;
 import com.github.jvmgo.classfile.ClassReader;
 
 public interface ConstantInfo {
-     int CONST_TAG_CLASS = 7;
-     int CONST_TAG_FIELD_REF = 9;
-     int CONST_TAG_METHOD_REF = 10;
-     int CONST_TAG_INTERFACE_MTTHOD_REF = 11;
-     int CONST_TAG_STRING = 8;
-     int CONST_TAG_INTEGER = 3;
-     int CONST_TAG_FLOAT = 4;
-     int CONST_TAG_LONG = 5;
-     int CONST_TAG_DOUBLE = 6;
-     int CONST_TAG_NAME_AND_TYPE = 12;
-     int CONST_TAG_UTF8 = 1;
-     int CONST_TAG_METHOD_HANDLE = 15;
-     int CONST_TAG_METHOD_TYPE = 16;
-     int CONST_TAG_INVOKE_DYNAMIC = 18;
+
+    int CONST_TAG_CLASS = 7;
+    int CONST_TAG_FIELD_REF = 9;
+    int CONST_TAG_METHOD_REF = 10;
+    int CONST_TAG_INTERFACE_MTTHOD_REF = 11;
+    int CONST_TAG_STRING = 8;
+    int CONST_TAG_INTEGER = 3;
+    int CONST_TAG_FLOAT = 4;
+    int CONST_TAG_LONG = 5;
+    int CONST_TAG_DOUBLE = 6;
+    int CONST_TAG_NAME_AND_TYPE = 12;
+    int CONST_TAG_UTF8 = 1;
+    int CONST_TAG_METHOD_HANDLE = 15;
+    int CONST_TAG_METHOD_TYPE = 16;
+    int CONST_TAG_INVOKE_DYNAMIC = 18;
 
 
     String getValue();
@@ -88,6 +89,5 @@ public interface ConstantInfo {
 
         return constantInfo;
     }
-
 
 }

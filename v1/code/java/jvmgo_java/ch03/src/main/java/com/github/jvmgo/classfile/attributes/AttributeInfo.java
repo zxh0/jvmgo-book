@@ -17,7 +17,7 @@ public interface AttributeInfo {
     static AttributeInfo[] readAttributes(ClassReader reader, ConstantPool cp) {
         int attributesCount = reader.nextU2ToInt();
         AttributeInfo[] attributes = new AttributeInfo[attributesCount];
-        
+
         for (int i = 0; i < attributesCount; i++) {
             attributes[i] = readAttribute(reader, cp);
         }
@@ -36,7 +36,7 @@ public interface AttributeInfo {
 
     //todo 工厂方法xml配置?
     static AttributeInfo newAttributeInfo(String attrName, long attrLen, ConstantPool cp) {
-        switch(attrName ) {
+        switch (attrName) {
             //method属性
             case "Code"://方法体
                 return new CodeAttribute(cp);
