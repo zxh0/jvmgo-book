@@ -1,4 +1,4 @@
-package com.github.jvmgo.classfile.attributeInfo;
+package com.github.jvmgo.classfile.attributes;
 
 import com.github.jvmgo.classfile.ClassReader;
 import com.github.jvmgo.classfile.constantPool.ConstantPool;
