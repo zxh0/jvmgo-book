@@ -1,6 +1,6 @@
-package com.github.jvmgo.classFile.constantPool;
+package com.github.jvmgo.classfile.constantPool;
 
-import com.github.jvmgo.classFile.ClassReader;
+import com.github.jvmgo.classfile.ClassReader;
 
 public class ConstMethodInfo implements ConstantInfo{
 	private ConstantPool constPool;

@@ -1,6 +1,6 @@
-package com.github.jvmgo.classFile.attributeInfo;
+package com.github.jvmgo.classfile.attributeInfo;
 
-import com.github.jvmgo.classFile.ClassReader;
+import com.github.jvmgo.classfile.ClassReader;
 
 
 public class LocalVariableTableAttribute implements AttributeInfo {

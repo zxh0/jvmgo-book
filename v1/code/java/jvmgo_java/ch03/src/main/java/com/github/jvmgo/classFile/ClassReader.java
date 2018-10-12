@@ -1,4 +1,4 @@
-package com.github.jvmgo.classFile;
+package com.github.jvmgo.classfile;
 
 import com.github.jvmgo.util.Util;
 

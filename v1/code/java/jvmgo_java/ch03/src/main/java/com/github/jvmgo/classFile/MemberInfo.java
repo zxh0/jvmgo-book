@@ -1,8 +1,8 @@
-package com.github.jvmgo.classFile;
+package com.github.jvmgo.classfile;
 
 
-import com.github.jvmgo.classFile.attributeInfo.AttributeInfo;
-import com.github.jvmgo.classFile.constantPool.ConstantPool;
+import com.github.jvmgo.classfile.attributeInfo.AttributeInfo;
+import com.github.jvmgo.classfile.constantPool.ConstantPool;
 import lombok.Getter;
 
 /*
