@@ -2,8 +2,8 @@ package com.github.jvmgo;
 
 import com.github.jvmgo.classfile.ClassFile;
 import com.github.jvmgo.classfile.MemberInfo;
-import com.github.jvmgo.classfile.constantPool.ConstantInfo;
-import com.github.jvmgo.classfile.constantPool.ConstantPool;
+import com.github.jvmgo.classfile.constantpool.ConstantInfo;
+import com.github.jvmgo.classfile.constantpool.ConstantPool;
 import com.github.jvmgo.classpath.Classpath;
 
 public class Main {

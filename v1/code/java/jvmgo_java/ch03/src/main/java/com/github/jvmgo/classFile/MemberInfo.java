@@ -2,7 +2,7 @@ package com.github.jvmgo.classfile;
 
 
 import com.github.jvmgo.classfile.attributes.AttributeInfo;
-import com.github.jvmgo.classfile.constantPool.ConstantPool;
+import com.github.jvmgo.classfile.constantpool.ConstantPool;
 import lombok.Getter;
 
 /*

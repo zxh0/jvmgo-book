@@ -1,4 +1,4 @@
-package com.github.jvmgo.classfile.constantPool;
+package com.github.jvmgo.classfile.constantpool;
 
 import com.github.jvmgo.classfile.ClassReader;
 
