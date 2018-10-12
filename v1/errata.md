@@ -16,6 +16,7 @@
  52		| 3.4.1		| 最后一段话			| 表3-5给出了...					| 表3-4给出了...							| ![hgaolbb][hgaolbb]			| 第4次印刷
  55		| 3.4.4		| 第2段话			| 表3-6给出了...					| 表3-5给出了...							| ![hgaolbb][hgaolbb]			| 第4次印刷
  61		| 3.5		|[第1段代码][p61]		| func startJVM(参数错误)...		| func startJVM(`cmd *Cmd`)...			| ![Jing0][Jing0]				| 第4次印刷
+ 70		| 4.3.2		|[第3段代码][p70]		| push()方法内的两对大括号未对齐	|										| ![gwr0-0][gwr0-0]				| 
  71		| 4.3.3		|[第1段代码][p71]		| Frame结构体未对齐				|										| ![gwr0-0][gwr0-0]				| 
  81		| 4.3.6		| 图4-13				| botto							| botto**m**							| ![zxh][zxh]					| 第2次印刷
  88		| 5.1		| 第1段话			| 266(0xFF)						| 2**55**(0xFF)							| ![charles0lee][charles0lee]	| 第3次印刷
@@ -64,6 +65,7 @@
 [一切都将尘封]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
 [p26]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
 [p61]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/main.go#L20
+[p70]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch04/rtda/jvm_stack.go#L16
 [p71]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch04/rtda/frame.go#L7
 [p95]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch05/instructions/loads/iload.go#L10
 [p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
