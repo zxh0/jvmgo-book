@@ -6,7 +6,7 @@ cd v1/code/java/jvmgo_java
 # export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/
 sh gradlew ch01:run --args ' -version' | grep -q "1.8.0"
 sh gradlew ch02:run --args ' java.lang.Object' | grep -q "class data"
-# sh gradlew ch03:run --args ' java.lang.Object' | grep -q "this class: java/lang/Object"
+sh gradlew ch03:run --args ' java.lang.Object' | grep -q "this class: java/lang/Object"
 # sh gradlew ch04:run --args ' java.lang.Object' 2>&1 | grep -q "100"
 # sh gradlew ch05:run --args ' -cp ../java/example.jar jvmgo.book.ch05.GaussTest' 2>&1 | grep -q "5050"
 # sh gradlew ch06:run --args ' -cp ../java/example.jar jvmgo.book.ch06.MyObject' | grep -q "32768"
