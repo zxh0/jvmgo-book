@@ -5,7 +5,7 @@
 language: go
 
 go:
-  - "1.9"
+  - "1.11"
 
 before_install: 
   - sudo apt-get install oracle-java8-set-default
