@@ -4,7 +4,7 @@
 
 Q：**本书第二版什么时候出版？**
 
-A：暂时没有出版第二版的计划。如果大家有好的建议或者意见，可以[提交issue](https://github.com/zxh0/jvmgo-book/issues/new)，也可以加入本书的QQ群直接和作者交流。
+A：暂时没有出版第二版的计划。如果大家有好的建议或者意见，可以[提交issue](https://github.com/zxh0/jvmgo-book/issues/new)，也可以加入本书的QQ群直接和作者交流。如果大家不满足于只是实现虚拟机，还想自己动手实现编译器或者标准库，可以阅读作者的第二本书[《自己动手实现Lua》](https://item.jd.com/12458778.html)。
 
 
 
