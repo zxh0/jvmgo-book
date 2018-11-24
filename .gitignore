@@ -3,5 +3,6 @@ pkg/
 build/
 .gradle/
 .idea/
-*.iml
 out/
+*.iml
+*.DS_Store
