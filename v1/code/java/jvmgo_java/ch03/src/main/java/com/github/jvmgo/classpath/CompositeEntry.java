@@ -17,10 +17,15 @@ class CompositeEntry implements Entry {
     @Override
     public byte[] readClass(String className) throws Exception {
         for (Entry entry : entries) {
+            byte[] bytes = null;
             try {
-                return entry.readClass(className);
-            } catch (Exception ignored) {
-
+                bytes = entry.readClass(className);
+            } catch (Exception e) {
+                continue;
+                //忽略异常，继续执行
+            }
+            if (bytes != null && bytes.length > 0) {
+                return bytes;
             }
         }
 
