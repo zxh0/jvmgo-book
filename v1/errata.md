@@ -33,6 +33,7 @@
 172		| 7.5.2		| 第2段				| 如果调用的中超类中的函数			| 如果调用的**是**超类中的函数				| ![zxh][zxh]					| 第3次印刷
 172		| 7.5.2		|[第3段代码][p172]	| (frame, methodtoBeInvoked)	| (frame, method**T**oBeInvoked)		| ![乌鸦的吉他][乌鸦的吉他]		| 第4次印刷
 175		| 7.5.4		| 最后一段话			| 从操作数栈中弹出this引用...		| 从操作数栈中**取**出this引用...			| ![乌鸦的吉他][乌鸦的吉他]		| 第4次印刷
+188		| 8.1		| 本页第一段话		| `[[java/lang/String;`	（少了L）	| `[[Ljava/lang/String;`				| |[险憨憨][险憨憨]				| 
 189		| 8.2.1		|[最后一段代码][p189]	| switch self.fields.(type) {	| switch self.**data**.(type) {			| ![JingkaiTang][JingkaiTang]	| 第4次印刷
 194		| 8.3.2		|[第2段代码][p194]	| ...(*rtc.ClassRef)			| ...(`*heap`.ClassRef)					| ![CURAS][CURAS]				| 第4次印刷
 199		| 8.3.6		| 最后一句话			| newMultiArray()				| newMulti**Dimensional**Array()		| ![CURAS][CURAS]				| 第4次印刷
@@ -45,34 +46,35 @@
 236		| 9.7		| 第1段话			| 让...方法返回~~非~~null值...	| 让...方法返回null值...					| ![zxh][zxh]					| 第4次印刷
 
 
-[Beyond]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Beyond.png?raw=true "Beyond"
-[CURAS]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/CURAS.png?raw=true "CURAS"
-[charles0lee]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/charles0lee.png?raw=true "charles0lee"
-[captain]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/captain.png?raw=true "captain"
-[gwr0-0]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/gwr0-0.png?raw=true "gwr0-0"
-[iHge2k]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/iHge2k.jpg?raw=true "iHge2k"
-[Jing0]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Jing0.jpg?raw=true "Jing0"
-[JingkaiTang]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/JingkaiTang.png?raw=true "JingkaiTang"
-[hgaolbb]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/hgaolbb.jpg?raw=true "hgaolbb"
-[Nancy945]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Nancy945.jpg?raw=true "Nancy945"
-[Powerful24HS]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/Powerful24HS.png?raw=true "Powerful24HS"
-[SevenKites]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/SevenKites.png?raw=true "SevenKites"
-[zxh]:			https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/zxh.png?raw=true "zxh"
-[啊乐]:			https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/啊乐.png?raw=true "啊乐"
-[乌鸦的吉他]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/乌鸦的吉他.jpg?raw=true "乌鸦的吉他"
-[风之魂JO]:		https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/风之魂JO.jpg?raw=true "风之魂JO"
-[先飞]:			https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/先飞.png?raw=true "先飞"
-[一切都将尘封]:	https://github.com/zxh0/jvmgo-book/blob/master/v1/readers/一切都将尘封.jpg?raw=true "一切都将尘封"
-[p26]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
-[p61]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch03/main.go#L20
-[p70]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch04/rtda/jvm_stack.go#L16
-[p71]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch04/rtda/frame.go#L7
-[p95]:   https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch05/instructions/loads/iload.go#L10
-[p137]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
-[p170a]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
-[p170b]: https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
-[p171]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L24
-[p172]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L51
-[p189]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/rtda/heap/array_object.go#L29
-[p194]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/instructions/references/anewarray.go#L12
-[p206]:  https://github.com/zxh0/jvmgo-book/blob/master/v1/code/go/src/jvmgo/ch08/rtda/heap/class.go#L125
+[Beyond]:		readers/Beyond.png "Beyond"
+[CURAS]:		readers/CURAS.png "CURAS"
+[charles0lee]:	readers/charles0lee.png "charles0lee"
+[captain]:		readers/captain.png "captain"
+[gwr0-0]:		readers/gwr0-0.png "gwr0-0"
+[iHge2k]:		readers/iHge2k.jpg "iHge2k"
+[Jing0]:		readers/Jing0.jpg "Jing0"
+[JingkaiTang]:	readers/JingkaiTang.png "JingkaiTang"
+[hgaolbb]:		readers/hgaolbb.jpg "hgaolbb"
+[Nancy945]:		readers/Nancy945.jpg "Nancy945"
+[Powerful24HS]:	readers/Powerful24HS.png "Powerful24HS"
+[SevenKites]:	readers/SevenKites.png "SevenKites"
+[zxh]:			readers/zxh.png "zxh"
+[啊乐]:			readers/啊乐.png "啊乐"
+[乌鸦的吉他]:		readers/乌鸦的吉他.jpg "乌鸦的吉他"
+[风之魂JO]:		readers/风之魂JO.jpg "风之魂JO"
+[先飞]:			readers/先飞.png "先飞"
+[一切都将尘封]:	readers/一切都将尘封.jpg "一切都将尘封"
+[险憨憨]:		readers/险憨憨.jpeg "险憨憨"
+[p26]:			code/go/src/jvmgo/ch03/classfile/class_reader.go#L45
+[p61]:			code/go/src/jvmgo/ch03/main.go#L20
+[p70]:			code/go/src/jvmgo/ch04/rtda/jvm_stack.go#L16
+[p71]:			code/go/src/jvmgo/ch04/rtda/frame.go#L7
+[p95]:			code/go/src/jvmgo/ch05/instructions/loads/iload.go#L10
+[p137]:			code/go/src/jvmgo/ch06/rtda/heap/class.go#L20
+[p170a]:		code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L5
+[p170b]:		code/go/src/jvmgo/ch07/instructions/references/invokestatic.go#L14
+[p171]:			code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L24
+[p172]:			code/go/src/jvmgo/ch07/instructions/references/invokespecial.go#L51
+[p189]:			code/go/src/jvmgo/ch08/rtda/heap/array_object.go#L29
+[p194]:			code/go/src/jvmgo/ch08/instructions/references/anewarray.go#L12
+[p206]:			code/go/src/jvmgo/ch08/rtda/heap/class.go#L125
