@@ -33,7 +33,7 @@
 172		| 7.5.2		| 第2段				| 如果调用的中超类中的函数			| 如果调用的**是**超类中的函数				| ![zxh][zxh]					| 第3次印刷
 172		| 7.5.2		|[第3段代码][p172]	| (frame, methodtoBeInvoked)	| (frame, method**T**oBeInvoked)		| ![乌鸦的吉他][乌鸦的吉他]		| 第4次印刷
 175		| 7.5.4		| 最后一段话			| 从操作数栈中弹出this引用...		| 从操作数栈中**取**出this引用...			| ![乌鸦的吉他][乌鸦的吉他]		| 第4次印刷
-188		| 8.1		| 本页第一段话		| `[[java/lang/String;`	（少了L）	| `[[Ljava/lang/String;`				| |[险憨憨][险憨憨]				| 
+188		| 8.1		| 本页第一段话		| `[[java/lang/String;`	（少了L）	| `[[Ljava/lang/String;`				| ![险憨憨][险憨憨]				| 
 189		| 8.2.1		|[最后一段代码][p189]	| switch self.fields.(type) {	| switch self.**data**.(type) {			| ![JingkaiTang][JingkaiTang]	| 第4次印刷
 194		| 8.3.2		|[第2段代码][p194]	| ...(*rtc.ClassRef)			| ...(`*heap`.ClassRef)					| ![CURAS][CURAS]				| 第4次印刷
 199		| 8.3.6		| 最后一句话			| newMultiArray()				| newMulti**Dimensional**Array()		| ![CURAS][CURAS]				| 第4次印刷
