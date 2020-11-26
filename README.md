@@ -4,6 +4,7 @@
 
 * [✎ 勘误表](v1/errata.md)
 * [☺ 购买][jd]
+* 加入读者交流群（qq: 470333113）
 
 [logo]: https://raw.githubusercontent.com/zxh0/jvmgo-book/master/v1/gophers/cover.png
 [jd]: https://item.jd.com/11935272.html
