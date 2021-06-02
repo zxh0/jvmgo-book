@@ -27,6 +27,7 @@
 135		| 6.3.2		| 第2段话			| ...存放类名和直接接口表，			| ...存放类名和直接接口名列表，				| ![SevenKites][SevenKites]		| 第4次印刷
 137		| 6.4		|[第3段代码][p137]	| staticVars `*`Slots			| staticVars Slots						| ![Powerful24HS][Powerful24HS]	| 第4次印刷
 140		| 6.4		| 最后一段话			| `ConstantValueIndex()`方法		| `ConstantValueAttribute()`方法			| ![SevenKites][SevenKites]		| 第4次印刷
+168		| 7.3		| 最后两段话			| 两处：... ch06\rtda\heap\ ...	| ... ch07\rtda\heap\ ...				| ![MrChangRay][MrChangRay] 	|
 170		| 7.5.1		|[第1段代码][p170a]	| import "jvmgo/ch07/rtda/class"| import "jvmgo/ch07/rtda/**heap**"		| ![Nancy945][Nancy945]			| 第4次印刷
 170		| 7.5.1		|[第2段代码][p170b]	| if !resolved.IsStatic() {		| if !resolved**Method**.IsStatic() {	| ![乌鸦的吉他][乌鸦的吉他]		| 第4次印刷
 171		| 7.5.2		|[第4段代码][p171]	| ...ArgSlotCount())			| ...ArgSlotCount()` - 1`)				| ![Beyond][Beyond]				| 第3次印刷
@@ -55,6 +56,7 @@
 [Jing0]:		readers/Jing0.jpg "Jing0"
 [JingkaiTang]:	readers/JingkaiTang.png "JingkaiTang"
 [hgaolbb]:		readers/hgaolbb.jpg "hgaolbb"
+[MrChangRay]:   readers/MisterChangRay.png "MisterChangRay"
 [Nancy945]:		readers/Nancy945.jpg "Nancy945"
 [Powerful24HS]:	readers/Powerful24HS.png "Powerful24HS"
 [SevenKites]:	readers/SevenKites.png "SevenKites"
