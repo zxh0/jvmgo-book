@@ -61,7 +61,7 @@ public class Classpath {
         }
 
         try {
-            return bootClasspath.readClass(className);
+            return extClasspath.readClass(className);
         } catch (Exception ignored) {
 
         }
