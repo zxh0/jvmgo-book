@@ -1,5 +1,7 @@
 # [《自己动手写Java虚拟机》][jd] 源代码
 
+![build workflow](https://github.com/zxh0/jvmgo-book/actions/workflows/main.yml/badge.svg)
+
 ![jvm.go Logo][logo]
 
 * [✎ 勘误表](v1/errata.md)
