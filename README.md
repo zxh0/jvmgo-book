@@ -17,3 +17,4 @@
 * [Relph1119/JVMByPython](https://github.com/Relph1119/JVMByPython)（Python）
 * [tzh476/zvm](https://github.com/tzh476/zvm)（Java）
 * [qszhu/jvm-ts](https://github.com/qszhu/jvm-ts)（TS）
+* [iamazy/jvm-rs](https://github.com/iamazy/jvm-rs) (Rust)
